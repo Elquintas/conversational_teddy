@@ -1,0 +1,16 @@
+
+content:
+    content_file: './content/teddy_content_robot.json'
+
+KWS:
+    samplerate: 16000
+    step_size: 0.5
+    vad_window_size: 0.5
+    mbn_window_size: 1.5
+    channels: 1
+    vad_threshold: 0.9 # the higher the less sensitive the vad is
+
+models:
+    asr_model: "stt_en_conformer_ctc_small"
+    mbn_model: "commandrecognition_en_matchboxnet3x1x64_v2"
+    vad_model: "vad_multilingual_marblenet"

@@ -1,5 +1,6 @@
 import os
 import sys
+import yaml
 import json
 import time
 import wave
@@ -27,7 +28,10 @@ from nemo.core.classes import IterableDataset
 from nemo_utils import AudioDataLayer, FrameASR, infer_signal
 from nemo.core.neural_types import NeuralType, AudioSignal, LengthsType
 
-from logic_standalone import audio_process
+from logic_manager import audio_process
+
+# Adds the root directory of the project to sys.path
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 # Creates shared object (dict), for exit condition
 shared_state = {'exit_cond': False}
@@ -39,18 +43,29 @@ logging.basicConfig(level=logging.INFO,
 # KWS Reference:
 # https://github.com/NVIDIA/NeMo/blob/main/tutorials/asr/Online_Offline_Speech_Commands_Demo.ipynb
 
+"""
+Loads config file
+"""
+def load_config(file_path):
+    with open(file_path, "r") as file:
+        config = yaml.safe_load(file)
+    return config
+
+#CONFIG_PATH = os.getenv('CONFIG_PATH', os.path.join(os.path.dirname(os.path.abspath(__file__)), "config.yaml"))
+CONFIG_PATH = os.getenv('CONFIG_PATH', None)
+CONFIG = load_config(CONFIG_PATH)
 
 """
 Function to record audio after wake-word is activated
 """
 def record_audio(
-    file_name='./audio/tmp_audio.wav', 
+    file_name='./content/tmp_audio.wav', 
     audio_dur=4, 
     fs=44100, 
     channels=1, 
-    dtype='int16'):
+    dtype='int16'
+):
     
-    #print("[INFO] : Recording audio...")
     logger.info('Recording audio...')
     audio_data = sd.rec(
                         int(audio_dur * fs), 
@@ -62,7 +77,7 @@ def record_audio(
 
     wavfile.write(file_name, fs, audio_data)
     logger.info('Audio saved to {}'.format(file_name))
-
+    return file_name
 
 """
 Callback function for streaming audio and performing inference
@@ -112,12 +127,6 @@ def random_hello_sound(content_data):
     
     option_list = content_data['intentions']['hello']['options']
     filename = random.choice(option_list)['file_path']
-    
-    #hello_dir = './content/audio/hello/'
-    #files = [f for f in os.listdir(hello_dir) \
-    #         if os.path.isfile(os.path.join(hello_dir,f))]
-    #play_sound(hello_dir+random.choice(files))
-
     play_sound(filename)
 
 """
@@ -127,12 +136,6 @@ def random_bye_sound(content_data):
 
     option_list = content_data['intentions']['bye']['options']
     filename = random.choice(option_list)['file_path']
-
-    #bye_dir = './content/audio/bye/'
-    #files = [f for f in os.listdir(bye_dir) \
-    #         if os.path.isfile(os.path.join(bye_dir,f))]
-    #play_sound(bye_dir+random.choice(files))
-
     play_sound(filename)
     
 
@@ -160,43 +163,32 @@ def play_prefix(data):
 def main():
 
     # PARAMETERS
-    SAMPLE_RATE = 16000
+    SAMPLE_RATE = CONFIG['KWS']['samplerate']     #16000
 
     # VAD THRESHOLD - THE HIGHER THE LESS SENSITIVE THE VAD
     # 0.85 if client is a macbook pro
     # 0.9* if client is a raspberry pi with a small mic
-    vad_threshold = 0.9 # 0.85   #0.8
+    vad_threshold = CONFIG['KWS']['vad_threshold']   #0.9 # 0.85 #0.8
 
     #STEP = 0.1
     #WINDOW_SIZE = 0.25 #0.15
     #mbn_WINDOW_SIZE = 1
 
-    STEP=0.5
-    WINDOW_SIZE=0.5
-    mbn_WINDOW_SIZE=1.5
+    STEP=CONFIG['KWS']['step_size']     #0.5
+    WINDOW_SIZE=CONFIG['KWS']['vad_window_size'] #0.5
+    mbn_WINDOW_SIZE=CONFIG['KWS']['mbn_window_size']   #1.5
+    CHANNELS = CONFIG['KWS']['channels'] #1
+    FRAME_LEN=STEP # use step of vad inference as frame len
+    CHUNK_SIZE=int(STEP * SAMPLE_RATE)
 
-    CHANNELS = 1
-    RATE = SAMPLE_RATE
-    FRAME_LEN = STEP # use step of vad inference as frame len
-    CHUNK_SIZE = int(STEP * RATE)
-
-    content_file = '/home/squintas/git_teddy/standalone/content/teddy_content_robot.json'
+    content_file=CONFIG['content']['content_file']  #'../content/teddy_content_robot.json'
     with open(content_file, 'r') as file:
         content_data = json.load(file)
 
-
-
-    # ASR MODULES
-    #asr_model = nemo_asr.models.ASRModel.from_pretrained("stt_en_conformer_transducer_medium")
-    #asr_model = nemo_asr.models.ASRModel.from_pretrained("stt_en_conformer_transducer_small")
-    asr_model = nemo_asr.models.ASRModel.from_pretrained("stt_en_conformer_ctc_small")
-    #asr_model = nemo_asr.models.EncDecCTCModelBPE.from_pretrained(model_name="stt_en_citrinet_256")
-    #asr_model = nemo_asr.models.ASRModel.from_pretrained(model_name="QuartzNet15x5Base-En")
-    
-    # KEYWORD SPOTTING MODULES
-    mbn_model = nemo_asr.models.EncDecClassificationModel.from_pretrained("commandrecognition_en_matchboxnet3x1x64_v2")
-    #vad_model = nemo_asr.models.EncDecClassificationModel.from_pretrained('vad_marblenet')
-    vad_model = nemo_asr.models.EncDecClassificationModel.from_pretrained("vad_multilingual_marblenet")
+    # Nemo pretrained models
+    asr_model = nemo_asr.models.ASRModel.from_pretrained(CONFIG['models']['asr_model'])
+    mbn_model = nemo_asr.models.EncDecClassificationModel.from_pretrained(CONFIG['models']['mbn_model'])
+    vad_model = nemo_asr.models.EncDecClassificationModel.from_pretrained(CONFIG['models']['vad_model'])
 
     # Preserve a copy of the full config
     vad_cfg = copy.deepcopy(vad_model._cfg)
@@ -301,11 +293,13 @@ def main():
         random_hello_sound(content_data)        
 
         # Records audio clip to send to server
-        record_audio()
+        tmp_audio = record_audio()
         
         # Sends audio clip to logic module
-        tmp_audio = './audio/tmp_audio.wav'
+        #tmp_audio = './content/tmp_audio.wav'
         response_file, intent = audio_process(tmp_audio,asr_model,content_data)     
+        if os.path.exists(tmp_audio):
+            os.remove(tmp_audio)
 
         if os.path.exists(response_file):
             

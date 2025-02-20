@@ -164,7 +164,7 @@ def main():
     intent = 'proverb'
     input_file = 'proverb_100_list.csv'  # Path to your input text file
     output_dir = f'../../content/{audio_fname}/100_proverbs'
-    not os.path.exists(output_dir):
+    if not os.path.exists(output_dir):
         os.makedirs(output_dir)
     text_to_speech(input_file, intent, output_dir, board)
 
