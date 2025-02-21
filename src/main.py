@@ -174,25 +174,31 @@ def main():
 
     # Setup input device
     p = pa.PyAudio()
-    print('[INFO] : Available audio input devices:')
     input_devices = []
+    dev_idx = None
+    
+    logger.info('Available audio input devices: ')
     for i in range(p.get_device_count()):
         dev = p.get_device_info_by_index(i)
         if dev.get('maxInputChannels'):
             input_devices.append(i)
-            print(i, dev.get('name'))
+            logger.info(f"{i},{dev.get('name')}")
+            
+            if dev.get('name') == 'sysdefault':
+                dev_idx=i
+                
+    if not input_devices:
+        logger.error('No input devices found!')
+        sys.exit(1)
+    
+    if dev_idx is None:
+        logger.error('No suitable microphone found as sysdefault. ' 
+                     'Please check your device settings.')
+        sys.exit(1)
 
-    if len(input_devices):
-        for dev in input_devices:
-            if int(dev)==17:
-                dev_idx=17
-                break
-            elif int(dev)==3:
-                dev_idx=3
-                break
+    logger.info('\n\n ***Marvin started***')
 
-    streaming = True
-        
+    streaming = True        
     while True:
         if not p==pa.PyAudio(): p = pa.PyAudio()
         if streaming:
@@ -252,7 +258,7 @@ def main():
             os.remove(tmp_audio)
 
         if os.path.exists(response_file):
-            # plays occasionally a random prefix
+            # plays occasionally a random prefix to intent response
             if random.random() < 0.75 and intent != "no-understand":
                 time.sleep(0.3)
                 prefix_file_list=content_data['intentions']['hello']['options']
