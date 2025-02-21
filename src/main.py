@@ -8,27 +8,25 @@ import nemo
 import copy
 import torch
 import random
-import socket
 import logging
 import librosa
 import logging
 import numpy as np
 import pyaudio as pa
-import soundfile as sf
-import sounddevice as sd
-import IPython.display as ipd
 import matplotlib.pyplot as plt
-import scipy.io.wavfile as wavfile
 import nemo.collections.asr as nemo_asr
 
 from functools import partial
 from omegaconf import OmegaConf
 from torch.utils.data import DataLoader
-from nemo.core.classes import IterableDataset
-from nemo_utils import AudioDataLayer, FrameASR, infer_signal
+
+from utils.nemo_utils import AudioDataLayer, FrameASR, infer_signal
+from utils.audio_utils import record_audio, play_random_sound, play_sound
+from logic_manager import audio_process
+
 from nemo.core.neural_types import NeuralType, AudioSignal, LengthsType
 
-from logic_manager import audio_process
+
 
 # Adds the root directory of the project to sys.path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -43,10 +41,12 @@ logging.basicConfig(level=logging.INFO,
 # KWS Reference:
 # https://github.com/NVIDIA/NeMo/blob/main/tutorials/asr/Online_Offline_Speech_Commands_Demo.ipynb
 
-"""
-Loads config file
-"""
+
 def load_config(file_path):
+    """
+    Loads config file
+    """
+    
     with open(file_path, "r") as file:
         config = yaml.safe_load(file)
     return config
@@ -55,41 +55,19 @@ def load_config(file_path):
 CONFIG_PATH = os.getenv('CONFIG_PATH', None)
 CONFIG = load_config(CONFIG_PATH)
 
-"""
-Function to record audio after wake-word is activated
-"""
-def record_audio(
-    file_name='./content/tmp_audio.wav', 
-    audio_dur=4, 
-    fs=44100, 
-    channels=1, 
-    dtype='int16'
-):
-    
-    logger.info('Recording audio...')
-    audio_data = sd.rec(
-                        int(audio_dur * fs), 
-                        samplerate=fs, 
-                        channels=channels, 
-                        dtype=dtype
-                        )
-    sd.wait()  # Wait until recording is finished
 
-    wavfile.write(file_name, fs, audio_data)
-    logger.info('Audio saved to {}'.format(file_name))
-    return file_name
-
-"""
-Callback function for streaming audio and performing inference
-"""
 def callback(in_data,
              frame_count, 
              time_info, 
              status, 
              vad, 
              mbn,
-             vad_threshold):
-   
+             vad_threshold
+):
+    """
+    Callback function for streaming audio and performing inference
+    """   
+    
     signal = np.frombuffer(in_data, dtype=np.int16)
     vad_result = vad.transcribe(signal)
     mbn_result = mbn.transcribe(signal)
@@ -119,46 +97,6 @@ def callback(in_data,
 
     return (in_data, pa.paContinue)
 
-
-"""
-Plays one of the random hello audios
-"""
-def random_hello_sound(content_data):
-    
-    option_list = content_data['intentions']['hello']['options']
-    filename = random.choice(option_list)['file_path']
-    play_sound(filename)
-
-"""
-Plays one of the random bye audios
-"""
-def random_bye_sound(content_data):
-
-    option_list = content_data['intentions']['bye']['options']
-    filename = random.choice(option_list)['file_path']
-    play_sound(filename)
-    
-
-"""
-Base function to play any sound
-"""
-def play_sound(filename):
-    
-    data, fs = sf.read(filename, dtype='float32')  
-    
-    # Ignores the first 100 samples due to loud clicking sound
-    sd.play(data[100:], 22050) #48000) #35000)
-    status = sd.wait()
-
-"""
-Plays a prefix once we get a response from the logic module
-"""
-def play_prefix(data):
-    
-    option_list = data['intentions']['prefix']['options']
-    ret_file = random.choice(option_list)['file_path']
-    
-    play_sound(ret_file)
 
 def main():
 
@@ -285,28 +223,40 @@ def main():
                 
         # Checks for exit condition
         if shared_state['exit_cond']:
-            random_bye_sound(content_data)
+
+            # Plays random 'bye' audio file
+            bye_file_list=content_data['intentions']['bye']['options']
+            play_random_sound(bye_file_list)
+
             logger.info('Exiting Teddy.')
             sys.exit()
 
-        time.sleep(0.5)        
-        random_hello_sound(content_data)        
+        time.sleep(0.5)
+        
+        # Plays random 'bye' audio file
+        hello_file_list=content_data['intentions']['hello']['options']
+        play_random_sound(hello_file_list)               
 
         # Records audio clip to send to server
-        tmp_audio = record_audio()
+        logger.info('Recording audio...')
+        tmp_audio = record_audio(
+                        audio_dur=CONFIG['rec_duration'],
+                        fs=CONFIG['rec_samplerate'],
+                        channels=CONFIG['rec_channels']
+                        )
+        logger.info('Audio saved to {}'.format(tmp_audio))
         
-        # Sends audio clip to logic module
-        #tmp_audio = './content/tmp_audio.wav'
         response_file, intent = audio_process(tmp_audio,asr_model,content_data)     
+        
         if os.path.exists(tmp_audio):
             os.remove(tmp_audio)
 
         if os.path.exists(response_file):
-            
             # plays occasionally a random prefix
             if random.random() < 0.75 and intent != "no-understand":
                 time.sleep(0.3)
-                play_prefix(content_data)
+                prefix_file_list=content_data['intentions']['hello']['options']
+                play_random_sound(prefix_file_list)
             
             time.sleep(0.3)
             play_sound(response_file)

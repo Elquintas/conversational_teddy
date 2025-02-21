@@ -1,4 +1,9 @@
 
+# total duration (s) of the recording after KWS is detected.
+rec_duration: 4
+rec_samplerate: 44100
+rec_channels: 1
+
 content:
     content_file: './content/teddy_content_robot.json'
 
