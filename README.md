@@ -24,6 +24,12 @@ $ poetry install --no-root
 ```
 ## How to Use
 
+First, do not forget to export the path to the config file:
+
+```sh
+export CONFIG_PATH=$(pwd)/config/config.yaml
+```
+
 Marvin relies on pre-synthesized audio files, that are retrieved following the user query. This speeds up inference, meaning that all content is already pre-generated à priori to any interactions.
 
 In order to generate the user content, please run the following script:
