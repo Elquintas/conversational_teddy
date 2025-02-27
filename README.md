@@ -42,7 +42,7 @@ This script uses a text-to-speech custom recipe to generate a robotic voice. Thi
 Please refer to the following command to launch a terminal-based instance of the storytelling bot:
 
 ```sh
-poetry run python src/tts.py
+poetry run python src/main.py
 ```
 Once the system properly loads, we are finally ready for some interactions.
 
