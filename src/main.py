@@ -9,11 +9,9 @@ import copy
 import torch
 import random
 import logging
-import librosa
 import logging
 import numpy as np
 import pyaudio as pa
-import matplotlib.pyplot as plt
 import nemo.collections.asr as nemo_asr
 
 from functools import partial
@@ -176,16 +174,19 @@ def main():
     p = pa.PyAudio()
     input_devices = []
     dev_idx = None
-    
+
     logger.info('Available audio input devices: ')
     for i in range(p.get_device_count()):
         dev = p.get_device_info_by_index(i)
         if dev.get('maxInputChannels'):
             input_devices.append(i)
             logger.info(f"{i},{dev.get('name')}")
-            
-            if dev.get('name') == 'sysdefault':
+           
+            if dev.get('name') == CONFIG['microphone_name']:
                 dev_idx=i
+            elif dev.get('name') in ['sysdefault','default']:
+                dev_idx=i
+            
                 
     if not input_devices:
         logger.error('No input devices found!')
