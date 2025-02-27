@@ -5,12 +5,14 @@
 Welcome to Marvin, an interactive storytelling bot designed for very simple and deterministic speech-based  interactions.
 
 Marvin currently supports the following 6 intentions:
+```sh
     - story
     - joke
     - fact
     - proverb
     - riddle
     - tongue-twister
+```
 
 ## Installation
 
@@ -20,6 +22,7 @@ In order to properly build the virtual environment, run the following command:
 ```sh
 $ poetry install --no-root
 ```
+## How to Use
 
 Marvin relies on pre-synthesized audio files, that are retrieved following the user query. This speeds up inference, meaning that all content is already pre-generated à priori to any interactions.
 
@@ -29,8 +32,6 @@ In order to generate the user content, please run the following script:
 poetry run python ./gen-content/robot/tts.py
 ```
 Once the script finishes, and all content is properly generated, Marvin is ready to be launched.
-
-## How to use
 
 Following the installation and content creation, we are finally ready to launch Marvin. Please refer to the following command to launch a terminal-based instance of the storytelling bot:
 
