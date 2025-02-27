@@ -43,10 +43,12 @@ Once the system properly loads, we are finally ready for some interactions.
 Say 'Marvin' to wake the system up and ask him to tell you any one of the 6 supported intentions for a brief interaction.
 
 e.g.
-    you: "Marvin"
-    Marvin: "Yes?"
-    You: "Tell me a joke."
-    Marvin: "Fine... Why was the math book so sad? It had too many problems."
+```sh
+   - you: "Marvin"
+   - Marvin: "Yes?"
+   - You: "Tell me a joke."
+   - Marvin: "Fine... Why was the math book so sad? It had too many problems."
+```
 
 ## Microphone Setup
 
