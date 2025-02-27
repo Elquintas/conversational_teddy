@@ -16,7 +16,7 @@ Marvin currently supports the following 6 intentions:
 
 ## Installation
 
-Marvin uses poetry as a dependency manager. If you do not have poetry installed in your system, please refer to petry's installation guide.
+Marvin uses poetry as a dependency manager. If you do not have poetry installed in your system, please refer to poetry's installation guide.
 In order to properly build the virtual environment, run the following command:
 
 ```sh
@@ -29,7 +29,7 @@ Marvin relies on pre-synthesized audio files, that are retrieved following the u
 In order to generate the user content, please run the following script:
 
 ```sh
-poetry run python ./gen-content/robot/tts.py
+cd gen-content/robot/ && poetry run python tts.py
 ```
 Once the script finishes, and all content is properly generated, Marvin is ready to be launched.
 
