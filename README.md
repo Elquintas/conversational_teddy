@@ -1,17 +1,17 @@
-# Marvin, an interactive storytelling bot!
+# Marvin, an interactive storytelling bot
 
 ## Summary
 
-Welcome to Marvin, an interactive storytelling bot designed for very simple and deterministic speech-based  interactions.
+Welcome to Marvin, an interactive storytelling bot designed for very simple and deterministic speech-based interactions.
 
 Marvin currently supports the following 6 intentions:
 ```sh
-    - story
-    - joke
-    - fact
-    - proverb
-    - riddle
-    - tongue-twister
+- story
+- joke
+- fact
+- proverb
+- riddle
+- tongue-twister
 ```
 
 ## Installation
@@ -31,9 +31,9 @@ In order to generate the user content, please run the following script:
 ```sh
 cd gen-content/robot/ && poetry run python tts.py
 ```
-Once the script finishes, and all content is properly generated, Marvin is ready to be launched.
+This script uses a text-to-speech custom recipe to generate a robotic voice. This can take several minutes. Once the script finishes, and all content is properly generated, Marvin is ready to be launched.
 
-Following the installation and content creation, we are finally ready to launch Marvin. Please refer to the following command to launch a terminal-based instance of the storytelling bot:
+Please refer to the following command to launch a terminal-based instance of the storytelling bot:
 
 ```sh
 poetry run python src/tts.py
@@ -46,7 +46,7 @@ e.g.
     you: "Marvin"
     Marvin: "Yes?"
     You: "Tell me a joke."
-    Marvin: "Fine... Why did the math book killed itself? It had many problems."
+    Marvin: "Fine... Why was the math book so sad? It had too many problems."
 
 ## Microphone Setup
 
