@@ -1,0 +1,23 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0  # Use the latest version
+    hooks:
+      - id: trailing-whitespace  # Removes trailing spaces
+      - id: end-of-file-fixer    # Ensures files end with a newline
+      - id: check-yaml           # Validates YAML files
+      - id: check-merge-conflict # Detects unresolved merge conflicts
+
+  - repo: https://github.com/psf/black
+    rev: 24.2.0  # Use the latest version
+    hooks:
+      - id: black  # Formats Python code using Black
+
+  - repo: https://github.com/PyCQA/flake8
+    rev: 6.1.0  # Use the latest version
+    hooks:
+      - id: flake8  # Checks for Python linting errors
+        args: ["--max-line-length=120", "--max-complexity=15", "--extend-ignore=E203"]
+          #- repo: https://github.com/pre-commit/mirrors-mypy
+          #rev: v1.8.0
+          #hooks:
+          #- id: mypy  # Static type checking
