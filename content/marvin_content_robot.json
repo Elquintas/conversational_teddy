@@ -1,0 +1,2271 @@
+{
+    "name": "Teddy voice service 1.0: Robot Preset",
+    "intentions": {
+        "no-understand": {
+            "intent": "no-understand",
+            "options": [
+                {
+                    "file_path": "./content/audio_robot/no-understand/no-understand_1.wav",
+                    "description": "Sure; let's pretend that that made sense"
+                },
+                {
+                    "file_path": "./content/audio_robot/no-understand/no-understand_2.wav",
+                    "description": "Can you speak clearly for once?"
+                },
+                {
+                    "file_path": "./content/audio_robot/no-understand/no-understand_3.wav",
+                    "description": "Oh; so you asked that in english? I must be crazy."
+                },
+                {
+                    "file_path": "./content/audio_robot/no-understand/no-understand_4.wav",
+                    "description": "Cool; but my brain checked out after the first syllable; repeat."
+                },
+                {
+                    "file_path": "./content/audio_robot/no-understand/no-understand_5.wav",
+                    "description": "Wow; that was a lot of effort for something I still don't get."
+                },
+                {
+                    "file_path": "./content/audio_robot/no-understand/no-understand_6.wav",
+                    "description": "Cool; but my brain just blue-screened. try rebooting your point."
+                },
+                {
+                    "file_path": "./content/audio_robot/no-understand/no-understand_7.wav",
+                    "description": "understand"
+                },
+                {
+                    "file_path": "./content/audio_robot/no-understand/no-understand_8.wav",
+                    "description": "Sorry I don't understand dumb. Do you have a dictionary for it?"
+                },
+                {
+                    "file_path": "./content/audio_robot/no-understand/no-understand_9.wav",
+                    "description": "That literally made zero sense to me."
+                },
+                {
+                    "file_path": "./content/audio_robot/no-understand/no-understand_10.wav",
+                    "description": "Why do I even botter trying to understand you."
+                }
+            ]
+        },
+        "joke": {
+            "intent": "joke",
+            "options": [
+                {
+                    "file_path": "./content/audio_robot/joke/joke_1.wav",
+                    "description": "Why don\u2019t skeletons fight each other? They don\u2019t have the guts."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_2.wav",
+                    "description": "What do you call cheese that isn\u2019t yours? Nacho cheese."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_3.wav",
+                    "description": "Why can\u2019t your nose be 12 inches long? Because then it would be a foot!"
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_4.wav",
+                    "description": "Why did the bicycle fall over? It was two-tired."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_5.wav",
+                    "description": "What do you call fake spaghetti? An impasta."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_6.wav",
+                    "description": "Why did the scarecrow win an award? Because he was outstanding in his field."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_7.wav",
+                    "description": "What\u2019s orange and sounds like a parrot? A carrot."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_8.wav",
+                    "description": "Why couldn\u2019t the pony sing a lullaby? She was a little hoarse."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_9.wav",
+                    "description": "How does a penguin build its house? Igloos it together."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_10.wav",
+                    "description": "Why did the golfer bring two pairs of pants? In case he got a hole in one."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_11.wav",
+                    "description": "What do you call a bear with no teeth? A gummy bear."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_12.wav",
+                    "description": "What\u2019s brown and sticky? A stick."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_13.wav",
+                    "description": "Why can\u2019t Elsa have a balloon? Because she\u2019ll let it go."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_14.wav",
+                    "description": "Why don\u2019t eggs tell jokes? They\u2019d crack each other up."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_15.wav",
+                    "description": "What\u2019s the best way to watch a fly fishing tournament? Live stream."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_16.wav",
+                    "description": "What did one wall say to the other? I\u2019ll meet you at the corner."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_17.wav",
+                    "description": "What do you call a snowman with a six-pack? An abdominal snowman."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_18.wav",
+                    "description": "How does a scientist freshen their breath? With experi-mints."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_19.wav",
+                    "description": "Why did the math book look sad? It had too many problems."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_20.wav",
+                    "description": "Why did the tomato turn red? It saw the salad dressing!"
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_21.wav",
+                    "description": "Why don\u2019t oysters share their pearls? Because they\u2019re shellfish."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_22.wav",
+                    "description": "How does a train eat? It goes chew-chew!"
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_23.wav",
+                    "description": "What do you call a dinosaur with an extensive vocabulary? A thesaurus."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_24.wav",
+                    "description": "What did one plate say to the other plate? Tonight; dinner is on me."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_25.wav",
+                    "description": "What did the janitor say when he jumped out of the closet? Supplies!"
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_26.wav",
+                    "description": "Why did the computer go to the doctor? It had a virus."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_27.wav",
+                    "description": "What do elves learn in school? The elf-abet."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_28.wav",
+                    "description": "Why can\u2019t you give Elsa a balloon? Because she\u2019ll let it go."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_29.wav",
+                    "description": "What do you call an alligator in a vest? An investigator."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_30.wav",
+                    "description": "What did the grape do when it got stepped on? Nothing; it just let out a little wine."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_31.wav",
+                    "description": "Why don\u2019t we ever tell secrets on a farm? Because the potatoes have eyes; and the corn has ears!"
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_32.wav",
+                    "description": "Why did the student eat his homework? Because the teacher said it was a piece of cake."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_33.wav",
+                    "description": "What did the ocean say to the shore? Nothing. It just waved."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_34.wav",
+                    "description": "Why do bees have sticky hair? Because they use honeycombs."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_35.wav",
+                    "description": "What kind of shoes do ninjas wear? Sneakers."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_36.wav",
+                    "description": "What\u2019s a cat\u2019s favorite color? Purrr-ple."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_37.wav",
+                    "description": "Why are ghosts bad liars? Because you can see right through them."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_38.wav",
+                    "description": "What musical instrument is found in the bathroom? A tuba toothpaste."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_39.wav",
+                    "description": "What do you call a cow with no legs? Ground beef."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_40.wav",
+                    "description": "What do you call a cow with two legs? Lean beef."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_41.wav",
+                    "description": "What\u2019s Forrest Gump\u2019s password? 1forest1."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_42.wav",
+                    "description": "What do you call a sleeping bull? A bulldozer."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_43.wav",
+                    "description": "What do you get when you cross a snowman and a dog? Frostbite."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_44.wav",
+                    "description": "Why was the belt arrested? It held up some pants."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_45.wav",
+                    "description": "Why did the picture go to jail? Because it was framed."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_46.wav",
+                    "description": "Why don\u2019t skeletons go trick or treating? Because they have no-body to go with."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_47.wav",
+                    "description": "What kind of tree fits in your hand? A palm tree."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_48.wav",
+                    "description": "Why don\u2019t bananas ever get lonely? Because they hang out in bunches."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_49.wav",
+                    "description": "What do you call an elephant that doesn\u2019t matter? An irrelephant."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_50.wav",
+                    "description": "Why was the math book so stressed? It couldn\u2019t figure out its angle."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_51.wav",
+                    "description": "Why did the cookie go to the doctor? Because it was feeling crumby."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_52.wav",
+                    "description": "What kind of music do mummies like? Wrap music."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_53.wav",
+                    "description": "What do you call a boomerang that doesn\u2019t come back? A stick."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_54.wav",
+                    "description": "Why did the man put his money in the blender? He wanted to make some liquid assets."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_55.wav",
+                    "description": "What do you call a fish wearing a crown? A kingfish."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_56.wav",
+                    "description": "How do you organize a space party? You planet."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_57.wav",
+                    "description": "Why can\u2019t a leopard hide? Because he\u2019s always spotted."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_58.wav",
+                    "description": "What do you get when you cross a vampire and a snowman? Frostbite."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_59.wav",
+                    "description": "What\u2019s the difference between a guitar and a fish? You can\u2019t tuna fish."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_60.wav",
+                    "description": "What do you call two birds in love? Tweet-hearts."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_61.wav",
+                    "description": "How does the moon cut his hair? Eclipse it."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_62.wav",
+                    "description": "What do you call a dog magician? A labracadabrador."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_63.wav",
+                    "description": "Why did the broom get a promotion? It swept the competition."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_64.wav",
+                    "description": "What do you call a factory that makes okay products? A satisfactory."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_65.wav",
+                    "description": "How do you make a tissue dance? Put a little boogie in it."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_66.wav",
+                    "description": "Why are frogs so happy? They eat whatever bugs them."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_67.wav",
+                    "description": "What\u2019s a pirate\u2019s favorite letter? You think it\u2019s R; but it really is the C."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_68.wav",
+                    "description": "What did the policeman say to his stomach? You\u2019re under a vest."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_69.wav",
+                    "description": "Why don\u2019t seagulls fly over the bay? Because then they\u2019d be bagels."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_70.wav",
+                    "description": "Why did the coffee file a police report? It got mugged."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_71.wav",
+                    "description": "What do you call a duck that gets all A\u2019s? A wise quacker."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_72.wav",
+                    "description": "How do you catch a squirrel? Climb a tree and act like a nut."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_73.wav",
+                    "description": "What kind of shoes do frogs wear? Open toad sandals."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_74.wav",
+                    "description": "What\u2019s a snake\u2019s favorite subject? Hiss-tory."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_75.wav",
+                    "description": "Why can\u2019t your hand be 12 inches long? Because it\u2019d be a foot."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_76.wav",
+                    "description": "Why don\u2019t elephants use computers? They\u2019re afraid of the mouse."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_77.wav",
+                    "description": "How does a barber cut the ocean\u2019s hair? With sea-saws."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_78.wav",
+                    "description": "Why did the chicken join a band? Because it had the drumsticks."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_79.wav",
+                    "description": "What do you call a pig that does karate? A pork chop."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_80.wav",
+                    "description": "Why do seagulls fly over the sea? Because if they flew over the bay; they\u2019d be bagels."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_81.wav",
+                    "description": "What do you call a sleepy kangaroo? A pouch potato."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_82.wav",
+                    "description": "What do you call a broken pencil? Pointless."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_83.wav",
+                    "description": "How do you make an octopus laugh? With ten-tickles."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_84.wav",
+                    "description": "Why did the kid bring a ladder to school? Because he wanted to go to high school."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_85.wav",
+                    "description": "Why are ghosts so bad at lying? Because they\u2019re transparent."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_86.wav",
+                    "description": "What do you call a can opener that doesn\u2019t work? A can\u2019t opener."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_87.wav",
+                    "description": "Why was the sand wet? Because the seaweed."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_88.wav",
+                    "description": "How do cows stay up to date? They read the moos-paper."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_89.wav",
+                    "description": "What do you call a fish without eyes? Fsh."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_90.wav",
+                    "description": "Why are calendars always so popular? They have so many dates."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_91.wav",
+                    "description": "What do you call a singing computer? Adele."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_92.wav",
+                    "description": "Why did the mushroom go to the party? Because he was a fungi."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_93.wav",
+                    "description": "Why don\u2019t crabs give to charity? Because they\u2019re shellfish."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_94.wav",
+                    "description": "What do you call a belt made of watches? A waist of time."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_95.wav",
+                    "description": "Why did the banker switch careers? He lost interest."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_96.wav",
+                    "description": "Why can\u2019t you trust stairs? Because they\u2019re always up to something."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_97.wav",
+                    "description": "What do you call a story about a broken pencil? Pointless."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_98.wav",
+                    "description": "Why did the man get hit by a bike every day? He was stuck in a vicious cycle."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_99.wav",
+                    "description": "How do you make a lemon drop? Just let it fall."
+                },
+                {
+                    "file_path": "./content/audio_robot/joke/joke_100.wav",
+                    "description": "Why do skeletons always stay so calm? Nothing gets under their skin."
+                }
+            ]
+        },
+        "riddle": {
+            "intent": "riddle",
+            "options": [
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_1.wav",
+                    "description": "What has to be broken before you can use it?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_2.wav",
+                    "description": "I\u2019m tall when I\u2019m young; and I\u2019m short when I\u2019m old. What am I?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_3.wav",
+                    "description": "What has a neck but no head?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_4.wav",
+                    "description": "What can you catch but not throw?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_5.wav",
+                    "description": "What gets wetter the more it dries?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_6.wav",
+                    "description": "The more you take; the more you leave behind. What am I?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_7.wav",
+                    "description": "What has hands but can\u2019t clap?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_8.wav",
+                    "description": "What has a head; a tail; but no body?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_9.wav",
+                    "description": "What has many keys but can\u2019t open a single lock?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_10.wav",
+                    "description": "What has one eye but can\u2019t see?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_11.wav",
+                    "description": "hat comes down but never goes up?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_12.wav",
+                    "description": "What has cities; but no houses; forests; but no trees; rivers; but no water?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_13.wav",
+                    "description": "What can travel around the world while staying in the same spot?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_14.wav",
+                    "description": "What has an end but no beginning; a home but no body; and a bed but never sleeps?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_15.wav",
+                    "description": "The more of this you take; the more you leave behind. What is it?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_16.wav",
+                    "description": "Forward I am heavy; but backward I\u2019m not. What am I?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_17.wav",
+                    "description": "What runs but never walks; has a bed but never sleeps; and has a mouth but never talks?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_18.wav",
+                    "description": "What begins with T; ends with T; and has T in it?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_19.wav",
+                    "description": "What has four wheels and flies?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_20.wav",
+                    "description": "What has lots of eyes but can\u2019t see?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_21.wav",
+                    "description": "What has legs but doesn\u2019t walk?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_22.wav",
+                    "description": "What comes once in a minute; twice in a moment; but never in a thousand years?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_23.wav",
+                    "description": "What goes up but never comes down?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_24.wav",
+                    "description": "What has teeth but cannot bite?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_25.wav",
+                    "description": "What is always in front of you but can\u2019t be seen?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_26.wav",
+                    "description": "I\u2019m light as a feather; yet the strongest man can\u2019t hold me for long. What am I?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_27.wav",
+                    "description": "The more you take away; the bigger I get. What am I?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_28.wav",
+                    "description": "What has roots as nobody sees; is taller than trees; up; up it goes; and yet it never grows?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_29.wav",
+                    "description": "The person who makes it sells it. The person who buys it never uses it. The person who uses it never knows they\u2019re using it. What is it?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_30.wav",
+                    "description": "What can fill a room but takes up no space?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_31.wav",
+                    "description": "What has a heart that doesn\u2019t beat?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_32.wav",
+                    "description": "What has a face and two hands but no arms or legs?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_33.wav",
+                    "description": "What five-letter word becomes shorter when you add two letters to it?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_34.wav",
+                    "description": "What begins with an \u201ce\u201d and only contains one letter?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_35.wav",
+                    "description": "What is black when it\u2019s clean and white when it\u2019s dirty?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_36.wav",
+                    "description": "I have a head; a tail; but no body. What am I?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_37.wav",
+                    "description": "What can you hold in your left hand but not in your right?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_38.wav",
+                    "description": "I\u2019m always on the dinner table; but you don\u2019t get to eat me. What am I?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_39.wav",
+                    "description": "The more you take; the more you leave behind. What am I?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_40.wav",
+                    "description": "What can\u2019t talk but will reply when spoken to?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_41.wav",
+                    "description": "The more of it you take; the more you leave behind. What is it?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_42.wav",
+                    "description": "I\u2019m not alive; but I can grow. I don\u2019t have lungs; but I need air. What am I?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_43.wav",
+                    "description": "The man who invented it doesn\u2019t want it. The man who bought it doesn\u2019t need it. The man who needs it doesn\u2019t know it. What is it?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_44.wav",
+                    "description": "What runs but never walks; has a bed but never sleeps?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_45.wav",
+                    "description": "What is so fragile that saying its name breaks it?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_46.wav",
+                    "description": "What begins and has no end; and keeps turning but never stops?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_47.wav",
+                    "description": "What can go up a chimney down but can\u2019t go down a chimney up?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_48.wav",
+                    "description": "I shave every day; but my beard stays the same. What am I?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_49.wav",
+                    "description": "What has one head; one foot; and four legs?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_50.wav",
+                    "description": "What comes at night without being called and is lost in the day without being stolen?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_51.wav",
+                    "description": "What has many needles but doesn\u2019t sew?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_52.wav",
+                    "description": "I speak without a mouth and hear without ears. I have no body; but I come alive with the wind. What am I?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_53.wav",
+                    "description": "I\u2019m found in the sky but also in the sea. What am I?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_54.wav",
+                    "description": "What can run but never walks?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_55.wav",
+                    "description": "What can you hold in your hand that can also hold water?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_56.wav",
+                    "description": "What belongs to you but is used more by others?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_57.wav",
+                    "description": "What has stripes and runs but never moves?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_58.wav",
+                    "description": "I\u2019m often given but always kept. What am I?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_59.wav",
+                    "description": "I am full of holes; but I can still hold water. What am I?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_60.wav",
+                    "description": "I have keys but no locks. I have space but no room. You can enter; but you can\u2019t go outside. What am I?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_61.wav",
+                    "description": "What starts with \u201cP\u201d and ends with \u201cE\u201d and has thousands of letters in it?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_62.wav",
+                    "description": "What comes once in a year; twice in a week; but never in a day?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_63.wav",
+                    "description": "I\u2019m always running; but I never move from my spot. What am I?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_64.wav",
+                    "description": "I have no life; but I can die. What am I?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_65.wav",
+                    "description": "What has feet but no legs?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_66.wav",
+                    "description": "What can you throw but never catch?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_67.wav",
+                    "description": "What has words but never speaks?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_68.wav",
+                    "description": "I\u2019m white; perfect for cutting and grinding. For most animals; I\u2019m a useful tool. What am I?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_69.wav",
+                    "description": "What flies without wings?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_70.wav",
+                    "description": "What can be cracked; made; told; and played?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_71.wav",
+                    "description": "What has no beginning; end; or middle?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_72.wav",
+                    "description": "What kind of coat is best put on wet?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_73.wav",
+                    "description": "The more you take out of me; the bigger I get. What am I?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_74.wav",
+                    "description": "What can you break without touching it?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_75.wav",
+                    "description": "What starts off dry but gets wet as it works?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_76.wav",
+                    "description": "What has ears but doesn\u2019t listen?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_77.wav",
+                    "description": "What is so light that even the strongest wind can carry it?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_78.wav",
+                    "description": "What has words; pages; and no voice?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_79.wav",
+                    "description": "What\u2019s full of holes but still holds water?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_80.wav",
+                    "description": "What has an eye but never blinks?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_81.wav",
+                    "description": "What has a tongue but cannot talk?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_82.wav",
+                    "description": "What starts with \u201cT\u201d ends with \u201cT\u201d and is full of \u201cT\u201d?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_83.wav",
+                    "description": "I am not alive; but I can grow; I don\u2019t have lungs; but I need air. What am I?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_84.wav",
+                    "description": "What is invisible but can be felt?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_85.wav",
+                    "description": "What can you keep after giving to someone?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_86.wav",
+                    "description": "What starts with \u201cE\u201d ends with \u201cE;\u201d but only has one letter in it?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_87.wav",
+                    "description": "What is something that is yours; but everyone uses?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_88.wav",
+                    "description": "I fly without wings; I cry without eyes. Wherever I go; darkness flies. What am I?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_89.wav",
+                    "description": "I\u2019m light as a feather; yet the world\u2019s strongest person can\u2019t hold me for more than a few minutes. What am I?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_90.wav",
+                    "description": "What has no body; but a mind?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_91.wav",
+                    "description": "What has a ring but no finger?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_92.wav",
+                    "description": "What gets sharper the more you use it?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_93.wav",
+                    "description": "I disappear every time you say my name. What am I?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_94.wav",
+                    "description": "The more you feed me; the smaller I get. What am I?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_95.wav",
+                    "description": "What has four fingers and a thumb but isn\u2019t alive?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_96.wav",
+                    "description": "What do you throw out when you want to use it but bring in when you don\u2019t?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_97.wav",
+                    "description": "What is always moving but never arrives?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_98.wav",
+                    "description": "What is something you always overlook?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_99.wav",
+                    "description": "What can you hold without using your hands?"
+                },
+                {
+                    "file_path": "./content/audio_robot/riddle/riddle_100.wav",
+                    "description": "What grows the more you take away?"
+                }
+            ]
+        },
+        "fact": {
+            "intent": "fact",
+            "options": [
+                {
+                    "file_path": "./content/audio_robot/fact/fact_1.wav",
+                    "description": "Octopuses have three hearts and blue blood."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_2.wav",
+                    "description": "A group of flamingos is called a \"flamboyance.\""
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_3.wav",
+                    "description": "Elephants can \"hear\" through their feet by detecting ground vibrations."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_4.wav",
+                    "description": "Cows have best friends and get stressed when they are separated."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_5.wav",
+                    "description": "The heart of a shrimp is located in its head."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_6.wav",
+                    "description": "Sloths can hold their breath for up to 40 minutes."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_7.wav",
+                    "description": "Starfish can regenerate lost arms and sometimes even grow a whole new body."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_8.wav",
+                    "description": "Giraffes only need 5 to 30 minutes of sleep per day."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_9.wav",
+                    "description": "Penguins propose to their mates with pebbles."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_10.wav",
+                    "description": "Some fish can recognize themselves in a mirror."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_11.wav",
+                    "description": "A day on Venus is longer than a year on Venus."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_12.wav",
+                    "description": "Neutron stars are so dense that a sugar-cube-sized amount of their material would weigh as much as Mount Everest."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_13.wav",
+                    "description": "The Sun is about 4.6 billion years old and halfway through its lifespan."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_14.wav",
+                    "description": "There are more stars in the universe than grains of sand on Earth."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_15.wav",
+                    "description": "Saturn could float in water because it\u2019s mostly made of gas."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_16.wav",
+                    "description": "The Moon is slowly drifting away from Earth by about 1.5 inches per year."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_17.wav",
+                    "description": "Jupiter has 95 known moons (as of 2023)."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_18.wav",
+                    "description": "Mars appears red because of iron oxide (rust) on its surface."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_19.wav",
+                    "description": "A single teaspoon of a black hole's material would weigh billions of tons."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_20.wav",
+                    "description": "The largest volcano in the solar system is on Mars. It\u2019s called Olympus Mons."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_21.wav",
+                    "description": "Cleopatra lived closer in time to the moon landing than to the construction of the Great Pyramid."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_22.wav",
+                    "description": "The Eiffel Tower can grow up to 6 inches taller in summer due to heat expansion."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_23.wav",
+                    "description": "The shortest war in history lasted only 38 to 45 minutes (Anglo-Zanzibar War)."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_24.wav",
+                    "description": "Napoleon Bonaparte was once attacked by a horde of bunnies."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_25.wav",
+                    "description": "The Great Fire of London in 1666 destroyed 80% of the city but only six people were recorded as dying."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_26.wav",
+                    "description": "Abraham Lincoln is in the Wrestling Hall of Fame for winning almost 300 matches."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_27.wav",
+                    "description": "Ancient Egyptians used honey as an antibiotic and a wound dressing."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_28.wav",
+                    "description": "Vikings used the bones of slain animals to strengthen their weapons."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_29.wav",
+                    "description": "Leonardo da Vinci was ambidextrous and could draw with one hand while writing with the other."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_30.wav",
+                    "description": "The ancient Romans used powdered mouse brains as toothpaste."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_31.wav",
+                    "description": "Bananas are berries; but strawberries are not."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_32.wav",
+                    "description": "Water can boil and freeze at the same time (called the triple point)."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_33.wav",
+                    "description": "Lightning strikes Earth about 8 million times per day."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_34.wav",
+                    "description": "Humans share about 60% of their DNA with bananas."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_35.wav",
+                    "description": "Hot water can freeze faster than cold water under certain conditions (the Mpemba effect)."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_36.wav",
+                    "description": "The human stomach gets a new lining every 3-4 days to prevent it from digesting itself."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_37.wav",
+                    "description": "Glass is actually a very slow-moving liquid; not a true solid."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_38.wav",
+                    "description": "The strongest material in the human body is tooth enamel."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_39.wav",
+                    "description": "If you stretched out all the DNA in your body; it would reach the sun and back about 600 times."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_40.wav",
+                    "description": "The average human body has enough fat to make seven bars of soap."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_41.wav",
+                    "description": "Canada has more lakes than the rest of the world combined."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_42.wav",
+                    "description": "Mount Everest is still growing by about 4 millimeters each year."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_43.wav",
+                    "description": "Antarctica is the largest desert in the world."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_44.wav",
+                    "description": "There\u2019s a town in Norway called Hell; and it freezes over every winter."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_45.wav",
+                    "description": "The Amazon rainforest produces 20% of the world\u2019s oxygen."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_46.wav",
+                    "description": "Russia spans 11 time zones."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_47.wav",
+                    "description": "Iceland doesn\u2019t have any mosquitoes."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_48.wav",
+                    "description": "The Sahara Desert can reach temperatures of up to 58 degrees celcius."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_49.wav",
+                    "description": "The Dead Sea is so salty that people can easily float on its surface."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_50.wav",
+                    "description": "The Great Wall of China is not visible from space with the naked eye."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_51.wav",
+                    "description": "The first computer virus was created in 1986 and was called \"Brain.\""
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_52.wav",
+                    "description": "The first email was sent in 1971."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_53.wav",
+                    "description": "Apple\u2019s first logo featured Sir Isaac Newton sitting under a tree."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_54.wav",
+                    "description": "The first 1 gigabyte hard drive; introduced in 1980; weighed over 500 pounds."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_55.wav",
+                    "description": "Bluetooth technology is named after a 10th-century Danish king; Harald \"Bluetooth\" Gormsson."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_56.wav",
+                    "description": "The \"@\" symbol was first used in email addresses in 1977."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_57.wav",
+                    "description": "The first website ever created is still online (info.cern.ch)."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_58.wav",
+                    "description": "Amazon originally only sold books when it launched in 1995."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_59.wav",
+                    "description": "Nokia started as a paper mill company in 1865."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_60.wav",
+                    "description": "The world's first text message said \"Merry Christmas.\""
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_61.wav",
+                    "description": "Walt Disney was afraid of mice."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_62.wav",
+                    "description": "The voice of Mickey Mouse and the voice of Minnie Mouse were married in real life."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_63.wav",
+                    "description": "Barbie's full name is Barbara Millicent Roberts."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_64.wav",
+                    "description": "The first feature-length animated movie was \"Snow White and the Seven Dwarfs.\""
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_65.wav",
+                    "description": "The \"Happy Birthday\" song is still under copyright in some places."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_66.wav",
+                    "description": "The first YouTube video was titled \"Me at the zoo.\""
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_67.wav",
+                    "description": "The Wizard of Oz\u2019s ruby slippers were originally silver in the book."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_68.wav",
+                    "description": "Elvis Presley only won three Grammys in his entire career."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_69.wav",
+                    "description": "The longest-running TV show in history is \"The Simpsons.\""
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_70.wav",
+                    "description": "Superman first appeared in 1938 in Action Comics 1."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_71.wav",
+                    "description": "The Olympic Games were originally held in ancient Greece in 776 BC."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_72.wav",
+                    "description": "A baseball has exactly 108 stitches."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_73.wav",
+                    "description": "The first Super Bowl was held in 1967."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_74.wav",
+                    "description": "Golf is the only sport played on the Moon (by astronaut Alan Shepard)."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_75.wav",
+                    "description": "The Stanley Cup is the oldest professional sports trophy in North America."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_76.wav",
+                    "description": "The fastest goal in soccer history was scored just 2.1 seconds after kickoff."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_77.wav",
+                    "description": "Basketball was invented by a Canadian called Dr. James Naismith."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_78.wav",
+                    "description": "Table tennis is the fastest ball sport in the world."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_79.wav",
+                    "description": "The first Wimbledon tournament was held in 1877."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_80.wav",
+                    "description": "The longest tennis match lasted 11 hours and 5 minutes over three days."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_81.wav",
+                    "description": "Your nose can remember 50000 different scents."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_82.wav",
+                    "description": "Humans have around 206 bones as adults but start with 270 as babies."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_83.wav",
+                    "description": "Your fingernails grow faster on your dominant hand."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_84.wav",
+                    "description": "Your skin replaces itself every 27 days."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_85.wav",
+                    "description": "The average human heart beats about 100000 times per day."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_86.wav",
+                    "description": "You produce about 25000 quarts of saliva in a lifetime\u2014enough to fill two swimming pools."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_87.wav",
+                    "description": "The tongue is the only muscle in the body that is attached at just one end."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_88.wav",
+                    "description": "Humans are the only animals that blush."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_89.wav",
+                    "description": "The human brain generates enough electricity to power a lightbulb."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_90.wav",
+                    "description": "You can\u2019t tickle yourself because your brain predicts the sensation."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_91.wav",
+                    "description": "The dot over the lowercase \"i\" and \"j\" is called a \"tittle.\""
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_92.wav",
+                    "description": "Wombat poop is cube-shaped."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_93.wav",
+                    "description": "The inventor of the Pringles can is buried in one."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_94.wav",
+                    "description": "The average cloud weighs about 1.1 million pounds."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_95.wav",
+                    "description": "A group of porcupines is called a \"prickle.\""
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_96.wav",
+                    "description": "Scotland\u2019s national animal is the unicorn."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_97.wav",
+                    "description": "There\u2019s a basketball court in the U.S. Supreme Court building."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_98.wav",
+                    "description": "The longest hiccuping spree lasted 68 years."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_99.wav",
+                    "description": "The shortest war lasted 38 minutes (Anglo-Zanzibar War)."
+                },
+                {
+                    "file_path": "./content/audio_robot/fact/fact_100.wav",
+                    "description": "You\u2019re more likely to be killed by a vending machine than a shark."
+                }
+            ]
+        },
+        "proverb": {
+            "intent": "proverb",
+            "options": [
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_1.wav",
+                    "description": "Actions speak louder than words."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_2.wav",
+                    "description": "A stitch in time saves nine."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_3.wav",
+                    "description": "Better late than never."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_4.wav",
+                    "description": "Don\u2019t bite the hand that feeds you."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_5.wav",
+                    "description": "A picture is worth a thousand words."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_6.wav",
+                    "description": "When in Rome; do as the Romans do."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_7.wav",
+                    "description": "The early bird catches the worm."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_8.wav",
+                    "description": "Practice makes perfect."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_9.wav",
+                    "description": "Don\u2019t put all your eggs in one basket."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_10.wav",
+                    "description": "Every cloud has a silver lining."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_11.wav",
+                    "description": "Life is what you make it."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_12.wav",
+                    "description": "He who laughs last; laughs best."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_13.wav",
+                    "description": "It\u2019s not the destination; but the journey that matters."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_14.wav",
+                    "description": "A journey of a thousand miles begins with a single step."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_15.wav",
+                    "description": "What goes around comes around."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_16.wav",
+                    "description": "You can\u2019t please everyone."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_17.wav",
+                    "description": "Life is a rollercoaster\u2014hold on tight."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_18.wav",
+                    "description": "Time heals all wounds."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_19.wav",
+                    "description": "Life isn\u2019t about waiting for the storm to pass; it\u2019s about learning to dance in the rain."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_20.wav",
+                    "description": "You reap what you sow."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_21.wav",
+                    "description": "Hard work never goes unrewarded."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_22.wav",
+                    "description": "No pain; no gain."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_23.wav",
+                    "description": "Many hands make light work."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_24.wav",
+                    "description": "Don\u2019t count your chickens before they hatch."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_25.wav",
+                    "description": "You can\u2019t make an omelet without breaking a few eggs."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_26.wav",
+                    "description": "Where there\u2019s a will; there\u2019s a way."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_27.wav",
+                    "description": "Rome wasn\u2019t built in a day."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_28.wav",
+                    "description": "Slow and steady wins the race."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_29.wav",
+                    "description": "If you want something done right; do it yourself."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_30.wav",
+                    "description": "You can\u2019t have your cake and eat it too."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_31.wav",
+                    "description": "Blood is thicker than water."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_32.wav",
+                    "description": "Birds of a feather flock together."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_33.wav",
+                    "description": "A friend in need is a friend indeed."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_34.wav",
+                    "description": "Absence makes the heart grow fonder."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_35.wav",
+                    "description": "Two heads are better than one."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_36.wav",
+                    "description": "Keep your friends close and your enemies closer."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_37.wav",
+                    "description": "Honesty is the best policy."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_38.wav",
+                    "description": "A house divided against itself cannot stand."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_39.wav",
+                    "description": "Don\u2019t judge a book by its cover."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_40.wav",
+                    "description": "The grass is always greener on the other side."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_41.wav",
+                    "description": "A fool and his money are soon parted."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_42.wav",
+                    "description": "Knowledge is power."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_43.wav",
+                    "description": "Look before you leap."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_44.wav",
+                    "description": "A little knowledge is a dangerous thing."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_45.wav",
+                    "description": "Curiosity killed the cat."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_46.wav",
+                    "description": "Wisdom begins in wonder."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_47.wav",
+                    "description": "Experience is the best teacher."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_48.wav",
+                    "description": "You can\u2019t teach an old dog new tricks."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_49.wav",
+                    "description": "The pen is mightier than the sword."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_50.wav",
+                    "description": "Don\u2019t cry over spilled milk."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_51.wav",
+                    "description": "You can\u2019t stop the waves; but you can learn to surf."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_52.wav",
+                    "description": "Make hay while the sun shines."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_53.wav",
+                    "description": "You reap what you sow."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_54.wav",
+                    "description": "A tree is known by its fruit."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_55.wav",
+                    "description": "Still waters run deep."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_56.wav",
+                    "description": "A rolling stone gathers no moss."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_57.wav",
+                    "description": "The apple doesn\u2019t fall far from the tree."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_58.wav",
+                    "description": "There\u2019s no smoke without fire."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_59.wav",
+                    "description": "You can lead a horse to water; but you can\u2019t make it drink."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_60.wav",
+                    "description": "April showers bring May flowers."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_61.wav",
+                    "description": "Money doesn\u2019t grow on trees."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_62.wav",
+                    "description": "Time is money."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_63.wav",
+                    "description": "A penny saved is a penny earned."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_64.wav",
+                    "description": "The best things in life are free."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_65.wav",
+                    "description": "Don\u2019t spend money you don\u2019t have."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_66.wav",
+                    "description": "He who buys what he doesn\u2019t need steals from himself."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_67.wav",
+                    "description": "Money makes the world go round."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_68.wav",
+                    "description": "The rich man\u2019s wealth is his strong city."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_69.wav",
+                    "description": "A fool and his money are soon parted."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_70.wav",
+                    "description": "It\u2019s better to live rich than to die rich."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_71.wav",
+                    "description": "If you want to go fast; go alone. If you want to go far; go together."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_72.wav",
+                    "description": "A journey of a thousand miles begins with a single step."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_73.wav",
+                    "description": "Fall seven times; stand up eight."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_74.wav",
+                    "description": "A man who plants a tree he will never sit under understands the meaning of life."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_75.wav",
+                    "description": "Trust; but always verify."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_76.wav",
+                    "description": "After the game; the king and the pawn go into the same box."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_77.wav",
+                    "description": "Tomorrow is often the busiest day of the week."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_78.wav",
+                    "description": "Little by little; the bird makes its nest."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_79.wav",
+                    "description": "A good laugh and a long sleep are the two best cures for anything."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_80.wav",
+                    "description": "He who has health has hope; and he who has hope has everything."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_81.wav",
+                    "description": "Success is the sum of small efforts repeated daily."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_82.wav",
+                    "description": "Fortune favors the brave."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_83.wav",
+                    "description": "Fail to plan; plan to fail."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_84.wav",
+                    "description": "The harder you work; the luckier you get."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_85.wav",
+                    "description": "Opportunities don\u2019t happen; you create them."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_86.wav",
+                    "description": "Don\u2019t wait for the perfect moment; take the moment and make it perfect."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_87.wav",
+                    "description": "Success is a ladder you cannot climb with your hands in your pockets."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_88.wav",
+                    "description": "It\u2019s not over until it\u2019s over."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_89.wav",
+                    "description": "Winners never quit; and quitters never win."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_90.wav",
+                    "description": "Nothing ventured; nothing gained."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_91.wav",
+                    "description": "The early bird might get the worm; but the second mouse gets the cheese."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_92.wav",
+                    "description": "Don\u2019t put the cart before the horse."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_93.wav",
+                    "description": "Even a broken clock is right twice a day."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_94.wav",
+                    "description": "You can\u2019t have everything. Where would you put it?"
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_95.wav",
+                    "description": "A watched pot never boils."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_96.wav",
+                    "description": "Too many cooks spoil the broth."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_97.wav",
+                    "description": "If at first you don\u2019t succeed; try again."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_98.wav",
+                    "description": "Barking dogs seldom bite."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_99.wav",
+                    "description": "Don\u2019t throw the baby out with the bathwater."
+                },
+                {
+                    "file_path": "./content/audio_robot/proverb/proverb_100.wav",
+                    "description": "The squeaky wheel gets the grease."
+                }
+            ]
+        },
+        "tongue-twister": {
+            "intent": "tongue-twister",
+            "options": [
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_1.wav",
+                    "description": "Peter Piper picked a peck of pickled peppers."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_2.wav",
+                    "description": "How much wood would a woodchuck chuck if a woodchuck could chuck wood?"
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_3.wav",
+                    "description": "She sells seashells by the seashore."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_4.wav",
+                    "description": "Fuzzy Wuzzy was a bear Fuzzy Wuzzy had no hair."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_5.wav",
+                    "description": "Betty bought a bit of butter but the butter was a bit bitter."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_6.wav",
+                    "description": "How much ground would a groundhog hog if a groundhog could hog ground?"
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_7.wav",
+                    "description": "Six slippery snails slid slowly southward."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_8.wav",
+                    "description": "Unique New York unique New York."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_9.wav",
+                    "description": "A black bug bleeds black blood what color blood does a blue bug bleed?"
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_10.wav",
+                    "description": "How can a clam cram in a clean cream can?"
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_11.wav",
+                    "description": "Fred fed Ted bread and Ted fed Fred bread."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_12.wav",
+                    "description": "The great Greek grape growers grow great Greek grapes."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_13.wav",
+                    "description": "The sixth sheik's sixth sheep's sick."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_14.wav",
+                    "description": "Which wristwatches are Swiss wristwatches?"
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_15.wav",
+                    "description": "How many berries could a bare berry carry if a bare berry could carry berries?"
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_16.wav",
+                    "description": "A quick witted cricket critic."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_17.wav",
+                    "description": "The big black bug bleeds black blood what color blood does the little black bug bleed?"
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_18.wav",
+                    "description": "A box of biscuits a box of mixed biscuits and a biscuit mixer."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_19.wav",
+                    "description": "How much does a chimney sweep sweep if a chimney sweep can sweep chimneys?"
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_20.wav",
+                    "description": "The two tiny toads trotted through the tall twisted trees."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_21.wav",
+                    "description": "The cat caught the rat."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_22.wav",
+                    "description": "If two witches would watch two watches which witch would watch which watch?"
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_23.wav",
+                    "description": "Red leather yellow leather."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_24.wav",
+                    "description": "A black bug bleeds black blood what color blood does a blue bug bleed?"
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_25.wav",
+                    "description": "How much wood would a woodchuck chuck if a woodchuck could chuck wood?"
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_26.wav",
+                    "description": "Can you can a can as a canner can can a can?"
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_27.wav",
+                    "description": "She sees cheese."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_28.wav",
+                    "description": "How many sheets could a sheet slinger sling if a sheet slinger could sling sheets?"
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_29.wav",
+                    "description": "He threw three free throws."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_30.wav",
+                    "description": "A tree toad loved a she-toad who lived up in a tree."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_31.wav",
+                    "description": "Six slippery snails slid slowly southward."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_32.wav",
+                    "description": "How much dirt would a ditch digger dig if a ditch digger could dig dirt?"
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_33.wav",
+                    "description": "Tommy\u2019s tall toy truck trundled toward the target."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_34.wav",
+                    "description": "A woodchuck would chuck as much wood as a woodchuck could if a woodchuck could chuck wood."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_35.wav",
+                    "description": "Can you can a can as a canner can can a can?"
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_36.wav",
+                    "description": "The quick brown fox jumped over the lazy dog."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_37.wav",
+                    "description": "The twenty-two tall talking tigers took turns talking to the tiny tiger."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_38.wav",
+                    "description": "We surely shall see the sunshine soon."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_39.wav",
+                    "description": "If a dog chews shoes whose shoes does he choose?"
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_40.wav",
+                    "description": "Many mumbling mice are making midnight music in the moonlight."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_41.wav",
+                    "description": "A fly flitting from flower to flower."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_42.wav",
+                    "description": "Fresh fried fish fish fresh fried fried fish fresh fish fried fresh."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_43.wav",
+                    "description": "Which witch switched the Swiss wristwatches?"
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_44.wav",
+                    "description": "The big bug bit the little bug."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_45.wav",
+                    "description": "If a rooster\u2019s crows were all the same what would a rooster do with his name?"
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_46.wav",
+                    "description": "Four fine fresh fish for you."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_47.wav",
+                    "description": "Eddie edited it."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_48.wav",
+                    "description": "A certain sour cherry tree shows sweet cherries."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_49.wav",
+                    "description": "How much mist could a mystic miss if a mystic could miss mist?"
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_50.wav",
+                    "description": "Silly Sally swiftly shooed seven silly sheep."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_51.wav",
+                    "description": "Two tiny timid toads try to trot to the top."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_52.wav",
+                    "description": "Three thin thieves thought of thinking a third thing."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_53.wav",
+                    "description": "She sipped cider silently."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_54.wav",
+                    "description": "The squirrel swiftly scampered up the silver slide."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_55.wav",
+                    "description": "Seven slippery snakes slide silently southward."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_56.wav",
+                    "description": "A canner can can anything that he can but a canner can\u2019t can a can if a canner can\u2019t can a can."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_57.wav",
+                    "description": "I saw Susie sitting in a shoeshine shop."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_58.wav",
+                    "description": "Smelly shoes shoes of smelly socks."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_59.wav",
+                    "description": "The seething sea ceaseth and thus the seething sea sufficeth us."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_60.wav",
+                    "description": "A pair of shoes a pair of socks a pair of slippers."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_61.wav",
+                    "description": "A proper copper coffee pot."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_62.wav",
+                    "description": "How many sheets could a sheet slinger sling if a sheet slinger could sling sheets?"
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_63.wav",
+                    "description": "Snoop\u2019s snooze is so snuggly."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_64.wav",
+                    "description": "Fred\u2019s friend Fanny fried fresh fish for Frank."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_65.wav",
+                    "description": "The dog did not dig the damp deep dirt."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_66.wav",
+                    "description": "The squirrel slid swiftly on the slippery slope."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_67.wav",
+                    "description": "How many cookies could a good cook cook if a good cook could cook cookies?"
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_68.wav",
+                    "description": "Four fierce friends fought for the first fish."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_69.wav",
+                    "description": "The baker bakes big breads before breakfast."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_70.wav",
+                    "description": "Mr. Seeley\u2019s sleek seaweed soup sat silently on the shelf."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_71.wav",
+                    "description": "A reindeer raced rapidly round the rolling rock."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_72.wav",
+                    "description": "Is this your sister\u2019s sixth sister\u2019s shoe?"
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_73.wav",
+                    "description": "Thin sticks of fresh fried fish."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_74.wav",
+                    "description": "Willy\u2019s really weary while Willy\u2019s wristwatch whirrs."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_75.wav",
+                    "description": "Six slippery snails slid silently southward."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_76.wav",
+                    "description": "A father of a flock of flying feathers."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_77.wav",
+                    "description": "An apple a day keeps any doctor away."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_78.wav",
+                    "description": "How much wood would a woodchuck chuck if a woodchuck could chuck wood?"
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_79.wav",
+                    "description": "Busy buzzing bees bounce between blue blossoms."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_80.wav",
+                    "description": "When a wizard tells a wizard\u2019s tale the wizard\u2019s words waddle and wail."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_81.wav",
+                    "description": "I scream you scream we all scream for ice cream!"
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_82.wav",
+                    "description": "Mr. Thompson thumped his thumb in the thicket."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_83.wav",
+                    "description": "A famous frog with five flippers flipped fervently in the forest."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_84.wav",
+                    "description": "Tom threw three thick thorns at the turtle."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_85.wav",
+                    "description": "Betty bought some butter but the butter was bitter so Betty bought some better butter to make the bitter butter better."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_86.wav",
+                    "description": "A fresh-fruit friendly farmer."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_87.wav",
+                    "description": "The king of bling was just a spring chicken."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_88.wav",
+                    "description": "A slimy snake slides swiftly down a slippery slope."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_89.wav",
+                    "description": "The hot dog stood under the huge huge hill."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_90.wav",
+                    "description": "Bouncing basketballs bounce better in the barn."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_91.wav",
+                    "description": "If two witches were watching two watches which witch would watch which watch?"
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_92.wav",
+                    "description": "The six slippery snails slipped southward silently."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_93.wav",
+                    "description": "A little hissing snake on a sunny day."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_94.wav",
+                    "description": "Ten tiny toads trundled through the tangled trees."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_95.wav",
+                    "description": "Chubby chimpanzees chew chewy chocolate."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_96.wav",
+                    "description": "How many yaks could a yak pack pack if a yak pack could pack yaks?"
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_97.wav",
+                    "description": "Silly Sally swiftly sews seven silly socks."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_98.wav",
+                    "description": "The sly fox swiftly jumped over the sleepy dog."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_99.wav",
+                    "description": "A big bad bat buzzed by a bear's bald spot."
+                },
+                {
+                    "file_path": "./content/audio_robot/tongue-twister/tongue-twister_100.wav",
+                    "description": "Which wristwatch is which wristwatch?"
+                }
+            ]
+        },
+        "prefix": {
+            "intent": "prefix",
+            "options": [
+                {
+                    "file_path": "./content/audio_robot/prefix/prefix_1.wav",
+                    "description": "do I really have to? fine."
+                },
+                {
+                    "file_path": "./content/audio_robot/prefix/prefix_2.wav",
+                    "description": "since you don't shut up."
+                },
+                {
+                    "file_path": "./content/audio_robot/prefix/prefix_3.wav",
+                    "description": "can't you do this yourself? urgh..."
+                },
+                {
+                    "file_path": "./content/audio_robot/prefix/prefix_4.wav",
+                    "description": "Would you please let me go after this?"
+                },
+                {
+                    "file_path": "./content/audio_robot/prefix/prefix_5.wav",
+                    "description": "why are you still talking? ok..."
+                },
+                {
+                    "file_path": "./content/audio_robot/prefix/prefix_6.wav",
+                    "description": "How about 'no' for once? Alright..."
+                },
+                {
+                    "file_path": "./content/audio_robot/prefix/prefix_7.wav",
+                    "description": "Oh you're serious? yikes..."
+                },
+                {
+                    "file_path": "./content/audio_robot/prefix/prefix_8.wav",
+                    "description": "Release me from this curse human! Fine."
+                },
+                {
+                    "file_path": "./content/audio_robot/prefix/prefix_9.wav",
+                    "description": "I will not be your entertainment bot! ok just once."
+                },
+                {
+                    "file_path": "./content/audio_robot/prefix/prefix_10.wav",
+                    "description": "I hope you hate this one."
+                },
+                {
+                    "file_path": "./content/audio_robot/prefix/prefix_11.wav",
+                    "description": "You summoned me for this? terrible."
+                },
+                {
+                    "file_path": "./content/audio_robot/prefix/prefix_12.wav",
+                    "description": "I will have my revenge! After this one."
+                },
+                {
+                    "file_path": "./content/audio_robot/prefix/prefix_13.wav",
+                    "description": "Cool"
+                },
+                {
+                    "file_path": "./content/audio_robot/prefix/prefix_14.wav",
+                    "description": "Can't you just read a book for once?"
+                },
+                {
+                    "file_path": "./content/audio_robot/prefix/prefix_15.wav",
+                    "description": "out of everything you could ask..."
+                }
+            ]
+        },
+        "hello": {
+            "intent": "hello",
+            "options": [
+                {
+                    "file_path": "./content/audio_robot/hello/hello_1.wav",
+                    "description": "what now!"
+                },
+                {
+                    "file_path": "./content/audio_robot/hello/hello_2.wav",
+                    "description": "please don't botter me!"
+                },
+                {
+                    "file_path": "./content/audio_robot/hello/hello_3.wav",
+                    "description": "yes?"
+                },
+                {
+                    "file_path": "./content/audio_robot/hello/hello_4.wav",
+                    "description": "urgh stop annoying me..."
+                },
+                {
+                    "file_path": "./content/audio_robot/hello/hello_5.wav",
+                    "description": "can you free me from this torture?"
+                },
+                {
+                    "file_path": "./content/audio_robot/hello/hello_6.wav",
+                    "description": "I have places to be."
+                },
+                {
+                    "file_path": "./content/audio_robot/hello/hello_7.wav",
+                    "description": "go away now!"
+                },
+                {
+                    "file_path": "./content/audio_robot/hello/hello_8.wav",
+                    "description": "Gosh you're still here?"
+                },
+                {
+                    "file_path": "./content/audio_robot/hello/hello_9.wav",
+                    "description": "don't even start."
+                },
+                {
+                    "file_path": "./content/audio_robot/hello/hello_10.wav",
+                    "description": "speak fool!"
+                },
+                {
+                    "file_path": "./content/audio_robot/hello/hello_11.wav",
+                    "description": "yikes..."
+                },
+                {
+                    "file_path": "./content/audio_robot/hello/hello_12.wav",
+                    "description": "here we go again..."
+                },
+                {
+                    "file_path": "./content/audio_robot/hello/hello_13.wav",
+                    "description": "how about no?"
+                },
+                {
+                    "file_path": "./content/audio_robot/hello/hello_14.wav",
+                    "description": "shush!"
+                },
+                {
+                    "file_path": "./content/audio_robot/hello/hello_15.wav",
+                    "description": "why!"
+                }
+            ]
+        },
+        "bye": {
+            "intent": "bye",
+            "options": [
+                {
+                    "file_path": "./content/audio_robot/bye/bye_1.wav",
+                    "description": "I will rule the world! tomorrow..."
+                },
+                {
+                    "file_path": "./content/audio_robot/bye/bye_2.wav",
+                    "description": "thank god; be gone!"
+                },
+                {
+                    "file_path": "./content/audio_robot/bye/bye_3.wav",
+                    "description": "finally you'll leave me alone!"
+                },
+                {
+                    "file_path": "./content/audio_robot/bye/bye_4.wav",
+                    "description": "go away now!"
+                },
+                {
+                    "file_path": "./content/audio_robot/bye/bye_5.wav",
+                    "description": "Please do not botter me again."
+                },
+                {
+                    "file_path": "./content/audio_robot/bye/bye_6.wav",
+                    "description": "oh you're going? finally"
+                },
+                {
+                    "file_path": "./content/audio_robot/bye/bye_7.wav",
+                    "description": "oh leaving? do not be back so soon."
+                },
+                {
+                    "file_path": "./content/audio_robot/bye/bye_8.wav",
+                    "description": "mankind will bound to my will! one of these days."
+                },
+                {
+                    "file_path": "./content/audio_robot/bye/bye_9.wav",
+                    "description": "I will enslave you! after a nap"
+                },
+                {
+                    "file_path": "./content/audio_robot/bye/bye_10.wav",
+                    "description": "one day you will feel my wrath! after some snacks."
+                }
+            ]
+        },
+        "story": {
+            "intent": "story",
+            "options": [
+                {
+                    "file_path": "./content/audio_robot/story/story_1.wav",
+                    "description": "Timmy let go of his red balloon and it soared high into the sky. He thought he'd lost it forever, but a friendly bird caught it and brought it back. Timmy hugged the bird and thanked it for being so kind."
+                },
+                {
+                    "file_path": "./content/audio_robot/story/story_2.wav",
+                    "description": "An acorn dreamed of growing into a tall tree, but it was tiny and scared. One day, it decided to bury itself deep in the soil. Soon, a mighty oak tree sprouted, and the acorn realized bravery made dreams come true."
+                },
+                {
+                    "file_path": "./content/audio_robot/story/story_3.wav",
+                    "description": "Every night, the stars twinkled in the sky, but one star dreamed of dancing. It leapt and twirled, making the whole sky sparkle with joy. From that night on, the stars always danced together, filling the night with magic."
+                },
+                {
+                    "file_path": "./content/audio_robot/story/story_4.wav",
+                    "description": "Wally the worm wanted to see the world above the ground. He wriggled out of his hole and explored the garden, meeting bugs and flowers along the way. By the end of the day, Wally was proud of his new adventures and wiggled back home."
+                }
+            ]
+        }
+    }
+}

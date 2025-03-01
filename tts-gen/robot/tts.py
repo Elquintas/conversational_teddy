@@ -1,7 +1,6 @@
 import os
 import csv
-
-# import uuid
+import json
 import librosa
 import numpy as np
 import soundfile as sf
@@ -74,6 +73,8 @@ def text_to_speech(
 
     os.makedirs(output_directory, exist_ok=True)
 
+    file_list = []
+
     i = 1
     # Read text from the input file
     with open(input_file, "r") as csvfile:
@@ -109,10 +110,17 @@ def text_to_speech(
 
             print(f"Speech saved to {output_audio_file}")
 
+            file_dict = {"file_path": output_audio_file[4:], "description": text}
+
+            file_list.append(file_dict)
+
+    return file_list
+
 
 def main():
 
     audio_fname = "audio_robot"
+    output_json_file = "../../content/marvin_content_robot.json"
 
     intent_dict = {
         "no-understand": "no-understand_list.csv",
@@ -127,11 +135,27 @@ def main():
         "story": "story_list.csv",
     }
 
+    content = {}
+
     for intent, input_file in intent_dict.items():
         output_dir = f"../../content/{audio_fname}/{intent}"
+
         if not os.path.exists(output_dir):
             os.makedirs(output_dir)
-        text_to_speech(input_file, intent, output_dir, board)
+
+        intent_files = text_to_speech(input_file, intent, output_dir, board)
+
+        # updates the dictionary with the new list of intent files
+        content[intent] = {"intent": intent, "options": intent_files}
+
+    # constructs the full content dictionary and converts it to a json file
+    full_content = {
+        "name": "Teddy voice service 1.0: Robot Preset",
+        "intentions": content,
+    }
+
+    with open(output_json_file, "w") as json_file:
+        json.dump(full_content, json_file, indent=4)
 
 
 if __name__ == "__main__":

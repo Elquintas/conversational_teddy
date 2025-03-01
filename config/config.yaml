@@ -7,7 +7,7 @@ rec_channels: 1
 microphone_name: "MacBook Pro Microphone"
 
 content:
-    content_file: "./content/teddy_content_robot.json"
+    content_file: "./content/marvin_content_robot.json" #"./content/teddy_content_robot.json"
 
 KWS:
     samplerate: 16000
