@@ -35,7 +35,7 @@ Marvin relies on pre-synthesized audio files, that are retrieved following the u
 In order to generate the user content, please run the following script:
 
 ```sh
-cd gen-content/robot/ && poetry run python tts.py
+cd tts-gen/robot/ && poetry run python tts.py
 ```
 This script uses a text-to-speech custom recipe to generate a robotic voice. This can take several minutes. Once the script finishes, and all content is properly generated, Marvin is ready to be launched.
 
