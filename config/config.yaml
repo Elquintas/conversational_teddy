@@ -18,6 +18,6 @@ KWS:
     vad_threshold: 0.9 # the higher the less sensitive the vad is
 
 models:
-    asr_model: "stt_en_conformer_ctc_small"
+    asr_model: "stt_en_conformer_transducer_small"
     mbn_model: "commandrecognition_en_matchboxnet3x1x64_v2"
     vad_model: "vad_multilingual_marblenet"

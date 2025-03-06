@@ -1,19 +1,9 @@
 import random
 import re
-
-# import os
-# import sys
-# import socket
-# import signal
-# import wave
-# import time
 import logging
 
-# import numpy as np
-
-# import nemo.collections.asr as nemo_asr
-
 from game_manager import SpeechGameInterface
+from utils.audio_utils import transcribe
 
 running = True
 logger = logging.getLogger(__name__)
@@ -33,30 +23,9 @@ def audio_process(filename, asr_model, content_data):
     prompt = transcribe(asr_model, filename)
 
     # Applies logic to the transcription
-    audio_response = teddy_server_logic(prompt, content_data)
+    audio_response = teddy_server_logic(prompt, content_data, asr_model)
 
     return audio_response
-
-
-"""
-Function used to transcribe audio data received from the client
-return text transcription
-"""
-
-
-def transcribe(asr_model, filename):
-
-    logger.info("Beginning transcription...")
-    transcript = asr_model.transcribe([filename])
-    text = transcript[0]  # [0]
-
-    if text:
-        logger.info("Transcribed audio - {}".format([text]))
-    else:
-        logger.warning("Error while transcribing.")
-        text = [""]
-
-    return text
 
 
 """
@@ -73,7 +42,7 @@ Teddy currently supports 6 main intentions:
 """
 
 
-def teddy_server_logic(prompt, data):
+def teddy_server_logic(prompt, data, asr_model):
 
     option_list = data["intentions"]["no-understand"]["options"]
     ret_file = random.choice(option_list)["file_path"]
@@ -115,7 +84,7 @@ def teddy_server_logic(prompt, data):
         return random.choice(option_list)["file_path"], "tonguetwister"
 
     elif re.search(game_pattern, prompt):
-        game_manager = SpeechGameInterface()
+        game_manager = SpeechGameInterface(asr_model)
         game_manager.run()
 
     return ret_file, "no-understand"

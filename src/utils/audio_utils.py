@@ -12,6 +12,24 @@ logging.basicConfig(
 )
 
 
+def transcribe(asr_model, filename):
+    """
+    Transcribes speech given an ASR engine
+    """
+
+    logger.info("Beginning transcription...")
+    transcript = asr_model.transcribe([filename])
+    text = transcript[0][0]
+
+    if text:
+        logger.info("Transcribed audio - {}".format([text]))
+    else:
+        logger.warning("Error while transcribing.")
+        text = [""]
+
+    return text
+
+
 def microphone_setup(CONFIG) -> int:
     """
     Sets up the microphone idx to be used by Marvin
