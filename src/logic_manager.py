@@ -87,4 +87,7 @@ def teddy_server_logic(prompt, data, asr_model):
         game_manager = SpeechGameInterface(asr_model)
         game_manager.run()
 
+        option_list = data["intentions"]["bye"]["options"]
+        return random.choice(option_list)["file_path"], "bye"
+
     return ret_file, "no-understand"
