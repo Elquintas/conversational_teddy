@@ -24,8 +24,9 @@ class MemoryGame:
         }
         self.sequence = []
         self.asr_model = asr_model
+        self.max_retries = 3
 
-    def generate_sequence(self, length=5):
+    def generate_sequence(self, length=3):
         """Generates a random sequence of sounds."""
         self.sequence = [random.choice(list(self.sounds.keys())) for _ in range(length)]
 
@@ -52,16 +53,23 @@ class MemoryGame:
         logger.info("Listen carefully to the following sequence of sounds")
         logger.info("Memorize the order, and say it correctly afterwards!")
 
+        max_ctr = 0
+
         self.generate_sequence()
         self.play_sequence()
 
-        user_sequence = self.get_user_input()
-        game_sequence = " ".join(self.sequence)
+        while max_ctr < self.max_retries:
 
-        logger.info(f"Ground truth sequence : {game_sequence}")
-        logger.info(f"Transcribed sequence  : {user_sequence}")
+            user_sequence = self.get_user_input()
+            game_sequence = " ".join(self.sequence)
 
-        if game_sequence == user_sequence:
-            logger.info("Correct! You have a great memory!")
-        else:
-            logger.info(f"Wrong! The correct sequence was: {game_sequence}")
+            logger.info(f"Ground truth sequence : {game_sequence}")
+            logger.info(f"Transcribed sequence  : {user_sequence}")
+
+            if game_sequence == user_sequence:
+                logger.info("Correct! You have a great memory!")
+                return
+            else:
+                logger.info(f"Wrong! The correct sequence was: {game_sequence}")
+                logger.info("Try again!")
+                max_ctr += 1
