@@ -10,9 +10,16 @@ logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
 )
 
+"""
+Pitch matching game: User needs to hum the tune Marvin plays.
+"""
+
 
 class PitchGame:
     def __init__(self, asr_model, NUM_NOTES=3, DURATION=1.5):
+        """
+        Initializes the class.
+        """
         self.asr_model = asr_model
         self.SAMPLE_RATE = 44100  # CD-quality audio
         self.DURATION = DURATION  # seconds per note
@@ -31,7 +38,9 @@ class PitchGame:
     def generate_wave(
         self, frequency, duration, sample_rate=44100, wave_type="triangle"
     ):
-        """Generate a waveform (sine, square, triangle, sawtooth) for a given frequency and duration."""
+        """
+        Generate a waveform (sine, square, triangle, sawtooth) for a given frequency and duration.
+        """
         t = np.linspace(0, duration, int(sample_rate * duration), False)
 
         if wave_type == "sine":
@@ -48,13 +57,17 @@ class PitchGame:
         return wave.astype(np.float32)
 
     def play_tone(self, frequency, duration):
-        """Play a sine wave of a given frequency."""
+        """
+        Plays a sine wave of a given frequency.
+        """
         tone = self.generate_wave(frequency, duration)
         sd.play(tone, samplerate=self.SAMPLE_RATE)
         sd.wait()
 
     def detect_frequencies(self, audio, sample_rate=44100):
-        """Use FFT to detect the most prominent frequency in the audio."""
+        """
+        Use FFT to detect the most prominent frequency in the audio.
+        """
         N = len(audio)
         fft_result = np.abs(fft(audio))[
             : N // 2
@@ -76,7 +89,9 @@ class PitchGame:
         return detected_freq
 
     def record_audio(self, duration):
-        """Record audio from the microphone."""
+        """
+        Record audio from the microphone.
+        """
         logger.info("Recording...")
         recording = sd.rec(
             int(self.SAMPLE_RATE * duration),
@@ -89,11 +104,15 @@ class PitchGame:
         return recording.flatten()
 
     def get_closest_note(self, freq):
-        """Find the closest musical note for a given frequency."""
+        """
+        Find the closest musical note for a given frequency.
+        """
         return min(self.NOTES, key=lambda note: abs(self.NOTES[note] - freq))
 
     def split_audio(self, audio, num_segments):
-        """Split the recorded audio into separate segments for each note."""
+        """
+        Split the recorded audio into separate segments for each note.
+        """
         segment_length = len(audio) // num_segments
         return [
             audio[i * segment_length : (i + 1) * segment_length]
@@ -101,6 +120,10 @@ class PitchGame:
         ]
 
     def play(self) -> bool:
+        """
+        Main method that runs the gameplay of the Pitch Game.
+        """
+
         selected_notes = np.random.choice(
             list(self.NOTES.keys()), self.NUM_NOTES, replace=False
         )
@@ -137,10 +160,10 @@ class PitchGame:
 
         # Final result
         if correct_count == self.NUM_NOTES:
-            logger.info("\n✅ Perfect! You hummed all the notes correctly.\n")
+            logger.info("\nPerfect! You hummed all the notes correctly.\n")
             return True
         else:
             logger.info(
-                f"\n❌ You got {correct_count}/{self.NUM_NOTES} correct. Try again!\n"
+                f"\nYou got {correct_count}/{self.NUM_NOTES} correct. Try again!\n"
             )
             return False

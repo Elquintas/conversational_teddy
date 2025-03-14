@@ -1,6 +1,8 @@
 # import random
 import logging
 
+# import itertools
+
 # import numpy as np
 # import sounddevice as sd
 # from scipy.fftpack import fft, fftfreq
@@ -10,6 +12,7 @@ import logging
 from animal_game import AnimalGame
 from pitch_game import PitchGame
 from memory_game import MemoryGame
+from reverse_game import ReverseGame
 
 logger = logging.getLogger(__name__)
 logging.basicConfig(
@@ -18,24 +21,33 @@ logging.basicConfig(
 
 
 """
-    Main class for Game interface. Controls the overal gameplay and
+    Main class for game interface. Controls the overal gameplay and
     storyline aspect of this functionality.
 """
 
 
 class SpeechGameInterface:
     def __init__(self, asr_model):
+        """
+        Initializes the class
+        """
+
         self.play = True
         self.max_retries = 3
         self.asr_model = asr_model
         self.audio_file = ".game_audio.wav"
 
+        self.free_words = ["whisper", "shadow", "moon", "dream"]
+
         self.animal_game = AnimalGame(self.asr_model)
         self.pitch_game = PitchGame(self.asr_model)
         self.memory_game = MemoryGame(self.asr_model)
+        self.reverse_game = ReverseGame(self.asr_model)
 
     def run(self):
-        """Initializes the game"""
+        """
+        Initializes the game
+        """
 
         while True:
             if self.play:
@@ -46,7 +58,9 @@ class SpeechGameInterface:
                 return
 
     def main_menu(self, retry_ctr):
-        """Main menu for the speech based game."""
+        """
+        Method that handles the menu for the speech based game.
+        """
 
         if not self.play:
             return
@@ -70,7 +84,9 @@ class SpeechGameInterface:
         self.main_menu(retry_ctr)
 
     def main_game_state(self, retry_ctr):
-        """Handles the main game state."""
+        """
+        Main method that handles the main game state.
+        """
 
         if not self.play:
             return
@@ -81,22 +97,31 @@ class SpeechGameInterface:
         logger.info(
             "To explore the four corners, say 'north', 'south', 'east' or 'west'."
         )
-        logger.info("You can also say 'exit' to quit...\n")
+        logger.info("You can say 'exit' to quit...\n")
+
+        # logger.info("Or you can say 'free' to attempt to free me.")
 
         command = input()
         if command:
             if "north" in command:
+                # is_north_valid =
                 self.game_state_north(retry_ctr=0)
                 retry_ctr = 0
             elif "south" in command:
+                # is_south_valid =
                 self.game_state_south(retry_ctr=0)
                 retry_ctr = 0
             elif "east" in command:
+                # is_east_valid =
                 self.game_state_east(retry_ctr=0)
                 retry_ctr = 0
             elif "west" in command:
+                # is_west_valid =
                 self.game_state_west(retry_ctr=0)
                 retry_ctr = 0
+
+            # elif "free" in command:
+            # 	self.game_state_final()
 
             elif "exit" in command or retry_ctr > self.max_retries:
                 self.play = False
@@ -109,27 +134,68 @@ class SpeechGameInterface:
 
     def game_state_north(self, retry_ctr):
         """
-        Pitch matching game. Marvin plays a tone and the user has to
-        match it by humming for 10 seconds.
+        Pitch matching game: User needs to hum the tune Marvin plays.
         """
         logger.info("You've reached the north part of my soul")
-        self.pitch_game.play()
+        game_success = self.pitch_game.play()
+
+        if game_success:
+            logger.info("The mystical word is: 'Moon'")
+            logger.info(
+                "Gather the remaining words from the other corners of my soul..."
+            )
+            logger.info("... and set me free at last!")
+            return True
+        else:
+            return False
 
     def game_state_south(self, retry_ctr):
         """
-        Guess the animal sound game. Marvin plays an animal
-        sound and the user has to guess it.
+        Animal game: User needs to guess the animal sound.
         """
         logger.info("You've reached the south part of my soul")
-        self.animal_game.play()
+        game_success = self.animal_game.play()
+
+        if game_success:
+            logger.info("The mystical word is: 'Dream'")
+            logger.info(
+                "Gather the remaining words from the other corners of my soul..."
+            )
+            logger.info("... and set me free at last!")
+            return True
+        else:
+            return False
 
     def game_state_east(self, retry_ctr):
         """
-        Memory game to remember a sequence of sounds.
+        Memory game: User needs to remember a sequence of sounds.
         """
         logger.info("You've reached the east part of my soul")
-        self.memory_game.play()
+        game_success = self.memory_game.play()
+
+        if game_success:
+            logger.info("The mystical word is: 'Shadow'")
+            logger.info(
+                "Gather the remaining words from the other corners of my soul..."
+            )
+            logger.info("... and set me free at last!")
+            return True
+        else:
+            return False
 
     def game_state_west(self, retry_ctr):
-        # TO DO
+        """
+        Reverse game: User needs to reverse the words of a given sentence.
+        """
         logger.info("You've reached the west part of my soul")
+        game_success = self.reverse_game.play()
+
+        if game_success:
+            logger.info("The mystical word is: 'Whisper'")
+            logger.info(
+                "Gather the remaining words from the other corners of my soul..."
+            )
+            logger.info("... and set me free at last.")
+            return True
+        else:
+            return False

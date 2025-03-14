@@ -8,9 +8,16 @@ logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
 )
 
+"""
+Animal game: User needs to guess the animal sound.
+"""
+
 
 class AnimalGame:
     def __init__(self, asr_model):
+        """
+        Initializes the class.
+        """
         self.asr_model = asr_model
         self.max_retries = 3
         self.audio_file = ".game_audio.wav"
@@ -29,8 +36,10 @@ class AnimalGame:
             "monkey": "./samples/animals/monkey2.wav",
         }
 
-    def play(self):
-
+    def play(self) -> bool:
+        """
+        Main method that runs the gameplay of the Animal Game.
+        """
         retry_ctr = 0
 
         logger.info("What is this sound?")
@@ -46,10 +55,10 @@ class AnimalGame:
 
             if animal in text:
                 logger.info("success! you've guessed it.")
-                return
+                return True
             else:
                 logger.info("You failed... Try again")
                 retry_ctr += 1
 
         logger.info("Well... It seems you'll have to try again some other time.")
-        return
+        return False
