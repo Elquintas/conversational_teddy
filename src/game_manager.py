@@ -37,12 +37,39 @@ class SpeechGameInterface:
         self.asr_model = asr_model
         self.audio_file = ".game_audio.wav"
 
-        self.free_words = ["whisper", "shadow", "moon", "dream"]
+        self.free_words = {"whisper", "shadow", "moon", "dream"}
 
         self.animal_game = AnimalGame(self.asr_model)
         self.pitch_game = PitchGame(self.asr_model)
         self.memory_game = MemoryGame(self.asr_model)
         self.reverse_game = ReverseGame(self.asr_model)
+
+        self.ending_dict = {
+            ("whisper", "shadow", "moon", "dream"): "ending 1",
+            ("whisper", "shadow", "dream", "moon"): "ending 2",
+            ("whisper", "moon", "shadow", "dream"): "ending 3",
+            ("whisper", "moon", "dream", "shadow"): "ending 4",
+            ("whisper", "dream", "shadow", "moon"): "ending 5",
+            ("whisper", "dream", "moon", "shadow"): "ending 6",
+            ("shadow", "whisper", "moon", "dream"): "ending 7",
+            ("shadow", "whisper", "dream", "moon"): "ending 8",
+            ("shadow", "moon", "whisper", "dream"): "ending 9",
+            ("shadow", "moon", "dream", "whisper"): "ending 10",
+            ("shadow", "dream", "whisper", "moon"): "ending 11",
+            ("shadow", "dream", "moon", "whisper"): "ending 12",
+            ("moon", "whisper", "shadow", "dream"): "ending 13",
+            ("moon", "whisper", "dream", "shadow"): "ending 14",
+            ("moon", "shadow", "whisper", "dream"): "ending 15",
+            ("moon", "shadow", "dream", "whisper"): "ending 16",
+            ("moon", "dream", "whisper", "shadow"): "ending 17",
+            ("moon", "dream", "shadow", "whisper"): "ending 18",
+            ("dream", "whisper", "shadow", "moon"): "ending 19",
+            ("dream", "whisper", "moon", "shadow"): "ending 20",
+            ("dream", "shadow", "whisper", "moon"): "ending 21",
+            ("dream", "shadow", "moon", "whisper"): "ending 22",
+            ("dream", "moon", "whisper", "shadow"): "ending 23",
+            ("dream", "moon", "shadow", "whisper"): "ending 24",
+        }
 
     def run(self):
         """
@@ -98,31 +125,33 @@ class SpeechGameInterface:
             "To explore the four corners, say 'north', 'south', 'east' or 'west'."
         )
         logger.info("You can say 'exit' to quit...\n")
+        logger.info("... or 'free' to attempt to free me.")
 
-        # logger.info("Or you can say 'free' to attempt to free me.")
+        north_check = True
+        south_check = True
+        east_check = True
+        west_check = True
 
         command = input()
         if command:
             if "north" in command:
-                # is_north_valid =
-                self.game_state_north(retry_ctr=0)
+                north_check = self.game_state_north(retry_ctr=0)
                 retry_ctr = 0
             elif "south" in command:
-                # is_south_valid =
-                self.game_state_south(retry_ctr=0)
+                south_check = self.game_state_south(retry_ctr=0)
                 retry_ctr = 0
             elif "east" in command:
-                # is_east_valid =
-                self.game_state_east(retry_ctr=0)
+                east_check = self.game_state_east(retry_ctr=0)
                 retry_ctr = 0
             elif "west" in command:
-                # is_west_valid =
-                self.game_state_west(retry_ctr=0)
+                west_check = self.game_state_west(retry_ctr=0)
                 retry_ctr = 0
-
-            # elif "free" in command:
-            # 	self.game_state_final()
-
+            elif "free" in command:
+                # All mini-games were cleared
+                if all([north_check, south_check, east_check, west_check]):
+                    self.game_state_final(retry_ctr=0)
+                else:
+                    logger.info("You need to continue exploring my soul...")
             elif "exit" in command or retry_ctr > self.max_retries:
                 self.play = False
                 return
@@ -199,3 +228,36 @@ class SpeechGameInterface:
             return True
         else:
             return False
+
+    def game_state_final(self, retry_ctr):
+        """
+        Final game state: User needs to say the four magical words
+        in order to free Marvin.
+        """
+        logger.info("I see you finished exploring the four corners of my soul.")
+        logger.info("You are finally ready to set me free.")
+        logger.info(
+            "Say those four magical words... But say them in the correct order."
+        )
+
+        command = input()
+        if command:
+            magic_words = command.split()
+            magic_words = [word for word in magic_words if word in self.free_words]
+
+            if set(magic_words) == self.free_words:
+                text = " ".join(magic_words)
+                logger.info(f"Success! {text}")
+                ending = self.ending_dict[tuple(text.split())]
+                logger.info(f"{ending}")
+
+                self.play = False
+                return
+
+            elif retry_ctr > self.max_retries:
+                logger.info("I'm not understanding you. Try again later.")
+                return
+
+        logger.info("You didn't say all the words...")
+        retry_ctr += 1
+        self.game_state_final(retry_ctr=retry_ctr)
