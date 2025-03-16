@@ -78,11 +78,12 @@ def record_audio(
     Function to record audio after wake-word is activated
     """
 
+    play_sound("./samples/system/start_rec.wav")
     audio_data = sd.rec(
         int(audio_dur * fs), samplerate=fs, channels=channels, dtype=dtype
     )
     sd.wait()  # Wait until recording is finished
-
+    play_sound("./samples/system/stop_rec_full.wav")
     wavfile.write(file_name, fs, audio_data)
 
     return file_name

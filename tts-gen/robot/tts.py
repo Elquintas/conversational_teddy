@@ -64,7 +64,12 @@ def text_to_speech(
         reader = csv.DictReader(csvfile)
         for i, row in enumerate(reader, start=1):
             text = row["text"]
-            output_audio_file = os.path.join(output_directory, f"{intent}_{i}.wav")
+
+            if intent != "game":
+                output_audio_file = os.path.join(output_directory, f"{intent}_{i}.wav")
+            else:
+                file_id = row["content_type"]
+                output_audio_file = os.path.join(output_directory, f"{file_id}.wav")
 
             tts = gTTS(text, lang="en", tld="co.uk")
             tts.save("temp_audio.mp3")
@@ -106,6 +111,7 @@ def main():
         "hello": "hello_list.csv",
         "bye": "bye_list.csv",
         "story": "story_list.csv",
+        "game": "game_answers_list.csv",
     }
 
     board = Pedalboard(

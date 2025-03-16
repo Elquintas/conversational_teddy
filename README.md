@@ -2,7 +2,7 @@
 
 ## Summary
 
-Welcome to Marvin, an interactive storytelling bot designed for very simple and deterministic speech-based interactions.
+Welcome to Marvin, a god trapped inside a voodo doll that you need to set free through simple and deterministic speech-based interactions.
 
 Marvin currently supports the following 6 intentions:
 ```sh
@@ -12,6 +12,8 @@ Marvin currently supports the following 6 intentions:
 - proverb
 - riddle
 - tongue-twister
+
+- set me free!
 ```
 
 ## Installation
@@ -46,7 +48,7 @@ poetry run python src/main.py
 ```
 Once the system properly loads, we are finally ready for some interactions.
 
-Say 'Marvin' to wake the system up and ask him to tell you any one of the 6 supported intentions for a brief interaction.
+Say 'Marvin' to wake the system up and ask him to tell you any one of the supported intentions for a brief interaction.
 
 e.g.
 ```sh
@@ -55,6 +57,8 @@ e.g.
    - You: "Tell me a joke."
    - Marvin: "Fine... Why was the math book so sad? It had too many problems."
 ```
+
+Furthermore, you can tell Marvin that you want to set him free in order to start a brief mini game with many possible endings.
 
 ## Microphone Setup
 
