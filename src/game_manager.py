@@ -1,4 +1,4 @@
-# import random
+import random
 import os
 import logging
 import time
@@ -36,6 +36,9 @@ class SpeechGameInterface:
         self.audio_file = ".game_audio.wav"
         self.audio_path = "./content/audio_robot/game/"
 
+        self.spell_pre = "./samples/spells-pre/"
+        self.spell_post = "./samples/spells-post/"
+
         self.free_words = {"whisper", "shadow", "moon", "dream"}
 
         self.animal_game = AnimalGame(self.asr_model)
@@ -43,33 +46,38 @@ class SpeechGameInterface:
         self.memory_game = MemoryGame(self.asr_model)
         self.reverse_game = ReverseGame(self.asr_model)
 
+        self.north_check = False
+        self.south_check = False
+        self.east_check = False
+        self.west_check = False
+
         self.main_state_firstcall = True
 
         self.ending_dict = {
-            ("whisper", "shadow", "moon", "dream"): "ending 1",
-            ("whisper", "shadow", "dream", "moon"): "ending 2",
-            ("whisper", "moon", "shadow", "dream"): "ending 3",
-            ("whisper", "moon", "dream", "shadow"): "ending 4",
-            ("whisper", "dream", "shadow", "moon"): "ending 5",
-            ("whisper", "dream", "moon", "shadow"): "ending 6",
-            ("shadow", "whisper", "moon", "dream"): "ending 7",
-            ("shadow", "whisper", "dream", "moon"): "ending 8",
-            ("shadow", "moon", "whisper", "dream"): "ending 9",
-            ("shadow", "moon", "dream", "whisper"): "ending 10",
-            ("shadow", "dream", "whisper", "moon"): "ending 11",
-            ("shadow", "dream", "moon", "whisper"): "ending 12",
-            ("moon", "whisper", "shadow", "dream"): "ending 13",
-            ("moon", "whisper", "dream", "shadow"): "ending 14",
-            ("moon", "shadow", "whisper", "dream"): "ending 15",
-            ("moon", "shadow", "dream", "whisper"): "ending 16",
-            ("moon", "dream", "whisper", "shadow"): "ending 17",
-            ("moon", "dream", "shadow", "whisper"): "ending 18",
-            ("dream", "whisper", "shadow", "moon"): "ending 19",
-            ("dream", "whisper", "moon", "shadow"): "ending 20",
-            ("dream", "shadow", "whisper", "moon"): "ending 21",
-            ("dream", "shadow", "moon", "whisper"): "ending 22",
-            ("dream", "moon", "whisper", "shadow"): "ending 23",
-            ("dream", "moon", "shadow", "whisper"): "ending 24",
+            ("whisper", "shadow", "moon", "dream"): "ending1.wav",
+            ("whisper", "shadow", "dream", "moon"): "ending2.wav",
+            ("whisper", "moon", "shadow", "dream"): "ending3.wav",
+            ("whisper", "moon", "dream", "shadow"): "ending4.wav",
+            ("whisper", "dream", "shadow", "moon"): "ending5.wav",
+            ("whisper", "dream", "moon", "shadow"): "ending6.wav",
+            ("shadow", "whisper", "moon", "dream"): "ending7.wav",
+            ("shadow", "whisper", "dream", "moon"): "ending8.wav",
+            ("shadow", "moon", "whisper", "dream"): "ending9.wav",
+            ("shadow", "moon", "dream", "whisper"): "ending10.wav",
+            ("shadow", "dream", "whisper", "moon"): "ending11.wav",
+            ("shadow", "dream", "moon", "whisper"): "ending12.wav",
+            ("moon", "whisper", "shadow", "dream"): "ending13.wav",
+            ("moon", "whisper", "dream", "shadow"): "ending14.wav",
+            ("moon", "shadow", "whisper", "dream"): "ending15.wav",
+            ("moon", "shadow", "dream", "whisper"): "ending16.wav",
+            ("moon", "dream", "whisper", "shadow"): "ending17.wav",
+            ("moon", "dream", "shadow", "whisper"): "ending18.wav",
+            ("dream", "whisper", "shadow", "moon"): "ending19.wav",
+            ("dream", "whisper", "moon", "shadow"): "ending20.wav",
+            ("dream", "shadow", "whisper", "moon"): "ending21.wav",
+            ("dream", "shadow", "moon", "whisper"): "ending22.wav",
+            ("dream", "moon", "whisper", "shadow"): "ending23.wav",
+            ("dream", "moon", "shadow", "whisper"): "ending24.wav",
         }
 
     def run(self):
@@ -98,15 +106,25 @@ class SpeechGameInterface:
             os.remove(fname)
         return text
 
-    def play_game_audio(self, fname: str):
+    def play_game_audio(self, fname: str) -> None:
         """
         Plays a given game audio file
         """
-
         try:
             audio_file = os.path.join(self.audio_path, fname)
-            print(audio_file)
             play_sound(audio_file)
+        except Exception as e:
+            logger.error(f"Audio file corrupted or not found: {e}")
+
+    def play_random_audio(self, folder_path: str) -> None:
+        """
+        Plays a random audio from a folder path
+        """
+        files = os.listdir(folder_path)
+        try:
+            fname = random.choice(files)
+            file_path = os.path.join(folder_path, fname)
+            play_sound(file_path)
         except Exception as e:
             logger.error(f"Audio file corrupted or not found: {e}")
 
@@ -163,30 +181,37 @@ class SpeechGameInterface:
         self.play_game_audio("main_game_state_audio3.wav")
 
         # Remove after testing is done
-        north_check = True
-        south_check = True
-        east_check = True
-        west_check = True
+        self.north_check = True
+        # south_check = True
+        self.east_check = True
+        self.west_check = True
 
         # command = input()
         command = self.record_and_transcribe(audio_dur=3)
 
         if command:
             if "north" in command:
-                north_check = self.game_state_north(retry_ctr=0)
+                self.north_check = self.game_state_north(retry_ctr=0)
                 retry_ctr = 0
             elif "south" in command:
-                south_check = self.game_state_south(retry_ctr=0)
+                self.south_check = self.game_state_south(retry_ctr=0)
                 retry_ctr = 0
             elif "east" in command:
-                east_check = self.game_state_east(retry_ctr=0)
+                self.east_check = self.game_state_east(retry_ctr=0)
                 retry_ctr = 0
             elif "west" in command:
-                west_check = self.game_state_west(retry_ctr=0)
+                self.west_check = self.game_state_west(retry_ctr=0)
                 retry_ctr = 0
             elif "free" in command:
                 # All mini-games were cleared
-                if all([north_check, south_check, east_check, west_check]):
+                if all(
+                    [
+                        self.north_check,
+                        self.south_check,
+                        self.east_check,
+                        self.west_check,
+                    ]
+                ):
                     self.game_state_final(retry_ctr=0)
                 else:
                     logger.info("You need to continue exploring my soul...")
@@ -322,8 +347,14 @@ class SpeechGameInterface:
                 text = " ".join(magic_words[:4])
                 logger.info(f"Success! {text}")
                 try:
+                    self.play_random_audio(self.spell_pre)
+
                     ending = self.ending_dict[tuple(text.split())]
+                    self.play_game_audio(ending)
                     logger.info(f"{ending}")
+
+                    self.play_random_audio(self.spell_post)
+
                     self.play = False
                     return
                 except KeyError:

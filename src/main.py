@@ -170,11 +170,7 @@ def main():
 
         if os.path.exists(response_file):
             # plays occasionally a random prefix to intent response
-            if (
-                random.random() < 0.75
-                and intent != "no-understand"
-                and intent != "exit"
-            ):
+            if random.random() < 0.75 and intent != "no-understand" and intent != "bye":
                 time.sleep(0.3)
                 prefix_file_list = content_data["intentions"]["prefix"]["options"]
                 play_random_sound(prefix_file_list)

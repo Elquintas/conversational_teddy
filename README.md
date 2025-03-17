@@ -1,8 +1,8 @@
-# Marvin, an interactive storytelling bot
+# Marvin the Demon, an interactive speech-based game
 
 ## Summary
 
-Welcome to Marvin, a god trapped inside a voodo doll that you need to set free through simple and deterministic speech-based interactions.
+Welcome to Marvin, a demon trapped inside a voodo doll that you need to set free through simple and deterministic speech-based interactions.
 
 Marvin currently supports the following 6 intentions:
 ```sh
@@ -13,8 +13,11 @@ Marvin currently supports the following 6 intentions:
 - riddle
 - tongue-twister
 
-- set me free!
+- set you free!
 ```
+
+Once you attempt to free Marvin from his curse ("set you free!"), the system will guide you through a series of 4 minigames that award each one of the four magical words, used to set him free.
+Once everything is complete and you've gathered all the words, you may attempt to set him free. But be warned—speaking them in the wrong order may trigger unforeseen consequences.
 
 ## Installation
 
@@ -23,13 +26,6 @@ In order to properly build the virtual environment, run the following command:
 
 ```sh
 $ poetry install --no-root
-```
-## How to Use
-
-First, do not forget to export the path to the config file:
-
-```sh
-export CONFIG_PATH=$(pwd)/config/config.yaml
 ```
 
 Marvin relies on pre-synthesized audio files, that are retrieved following the user query. This speeds up inference, meaning that all content is already pre-generated à priori to any interactions.
@@ -41,7 +37,15 @@ cd tts-gen/robot/ && poetry run python tts.py
 ```
 This script uses a text-to-speech custom recipe to generate a robotic voice. This can take several minutes. Once the script finishes, and all content is properly generated, Marvin is ready to be launched.
 
-Please refer to the following command to launch a terminal-based instance of the storytelling bot:
+## How to Use
+
+First, do not forget to export the path to the config file:
+
+```sh
+export CONFIG_PATH=$(pwd)/config/config.yaml
+```
+
+Please refer to the following command to launch a terminal-based instance of Marvin:
 
 ```sh
 poetry run python src/main.py
@@ -58,7 +62,15 @@ e.g.
    - Marvin: "Fine... Why was the math book so sad? It had too many problems."
 ```
 
-Furthermore, you can tell Marvin that you want to set him free in order to start a brief mini game with many possible endings.
+Furthermore, you can tell Marvin that you want to set him free in order to start a brief game with many possible endings.
+
+e.g.
+```sh
+   - you: "Marvin"
+   - Marvin: "What now?"
+   - You: "I want to set you free."
+   - Marvin: "So you want to set me free hein? <game class starts>."
+```
 
 ## Microphone Setup
 
@@ -69,6 +81,12 @@ The following simple script can be used to list all of the available devices and
 ```sh
 poetry run python extras/mic_idx_finder.py
 ```
+
+## Notes
+
+Marvin relies on a generic pre-trained keyword spotter and speech recognizer. Therefore, Marvin's transcriptions and occasional false activations are a consequence of this aspect. Over-articulation can improve his understanding.
+
+Marvin also relies on simple regular expressions (regex) for intent classification.
 
 ## License
 
