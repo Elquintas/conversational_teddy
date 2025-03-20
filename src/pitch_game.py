@@ -2,6 +2,7 @@ import logging
 import numpy as np
 import sounddevice as sd
 from scipy.fftpack import fft, fftfreq
+from utils.audio_utils import play_sound
 
 # from utils.audio_utils import record_audio, play_sound, transcribe
 
@@ -93,6 +94,7 @@ class PitchGame:
         Record audio from the microphone.
         """
         logger.info("Recording...")
+        play_sound("./samples/system/start_rec.wav")
         recording = sd.rec(
             int(self.SAMPLE_RATE * duration),
             samplerate=self.SAMPLE_RATE,
@@ -100,6 +102,7 @@ class PitchGame:
             dtype=np.float32,
         )
         sd.wait()
+        play_sound("./samples/system/stop_rec_full.wav")
         logger.info("Recording complete.")
         return recording.flatten()
 

@@ -26,7 +26,7 @@ game_state_west_audio2,Reverse the word order in the following sentence and get 
 game_state_west_audio3,Great reversing skills. The magic word is whisper
 game_state_west_audio4,set me free once you have all the words
 game_state_final_audio1,I see you've gathered all the words. You're ready to set me free
-game_state_final_audio2,Say those four magical words... But say them in the correct order!
+game_state_final_audio2,Say those four magical words... But be careful in their order, unless you enjoy unexpected chaos!
 game_state_final_audio3,silence will not set me free.
 game_state_final_audio4,I'm not understanding you; try again later.
 game_state_final_audio5,You did not say all the good words.
@@ -54,3 +54,28 @@ ending21,You actually did it. You freed me correctly. I... I don’t feel the hu
 ending22,Wha wait; why am I fading?! What did you do?! NO! If I was never trapped; then I—never existed?! AAAAAHHH—"
 ending23,Ooooh... now this is interesting. You’ve opened a door to something even I don’t recognize. Let’s step inside; shall we?"
 ending24,Ahhh... you feel it too; don’t you? The knowledge. The truth. We are not two beings anymore; mortal. We are infinite.
+cat,cat
+dog,dog
+friend,friend
+bird,bird
+robot,robot
+sees,sees
+likes,likes
+chases,chases
+finds,finds
+hears,hears
+small,small
+big,big
+fast,fast
+loud,loud
+funny,funny
+ball,ball
+car,car
+bird,bird
+house,house
+song,song
+quickly,quickly
+happily,happily
+silently,silently
+loudly,loudly
+gracefully,gracefully

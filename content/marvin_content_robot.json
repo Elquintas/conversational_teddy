@@ -2276,7 +2276,7 @@
                 },
                 {
                     "file_path": "./content/audio_robot/game/main_menu_audio2.wav",
-                    "description": "Say yes to set me free or no to exit"
+                    "description": "Say yes to attempt to set me free or no to exit"
                 },
                 {
                     "file_path": "./content/audio_robot/game/main_menu_audio3.wav",
@@ -2284,11 +2284,11 @@
                 },
                 {
                     "file_path": "./content/audio_robot/game/main_game_state_audio1.wav",
-                    "description": "You are going to explore the depths of my soul and gather the magic words."
+                    "description": "You will have to explore the depths of my soul and gather the magic words."
                 },
                 {
                     "file_path": "./content/audio_robot/game/main_game_state_audio2.wav",
-                    "description": "To explore the four corners"
+                    "description": "To explore the four corners; say north; south; east or west"
                 },
                 {
                     "file_path": "./content/audio_robot/game/main_game_state_audio3.wav",
@@ -2317,6 +2317,14 @@
                 {
                     "file_path": "./content/audio_robot/game/game_state_north_audio4.wav",
                     "description": "Gather the remaining words; and free me at last!"
+                },
+                {
+                    "file_path": "./content/audio_robot/game/game_state_north_audio5.wav",
+                    "description": "Not very matchy matchy hum? Try again!"
+                },
+                {
+                    "file_path": "./content/audio_robot/game/game_state_north_audio6.wav",
+                    "description": "Well... Try again later."
                 },
                 {
                     "file_path": "./content/audio_robot/game/game_state_south_audio1.wav",
@@ -2385,6 +2393,202 @@
                 {
                     "file_path": "./content/audio_robot/game/game_state_final_audio5.wav",
                     "description": "You did not say all the good words."
+                },
+                {
+                    "file_path": "./content/audio_robot/game/ending1.wav",
+                    "description": "Ahhh\u2026 the air; the fire; the screams! You have no idea how long I\u2019ve waited for this. Now\u2026 let\u2019s burn it all to the ground!"
+                },
+                {
+                    "file_path": "./content/audio_robot/game/ending2.wav",
+                    "description": "You wanted to set me free? How generous! In return; I\u2019ll make you a deal\u2014you get to keep watching while I live your life."
+                },
+                {
+                    "file_path": "./content/audio_robot/game/ending3.wav",
+                    "description": "Oh dear; you didn\u2019t think I\u2019d just leave; did you? No; no; someone must take my place. Enjoy eternity inside that doll; mortal."
+                },
+                {
+                    "file_path": "./content/audio_robot/game/ending4.wav",
+                    "description": "You actually trusted me? Oh; this is delicious! You mortals are so easy! Now; time for a little... fun."
+                },
+                {
+                    "file_path": "./content/audio_robot/game/ending5.wav",
+                    "description": "Oh no... Oh YES! You have no idea what you\u2019ve done. See you soon... and again... and again... and again."
+                },
+                {
+                    "file_path": "./content/audio_robot/game/ending6.wav",
+                    "description": "Oops. Looks like you said the wrong words. Or the right ones; depending on how much you enjoy screaming."
+                },
+                {
+                    "file_path": "./content/audio_robot/game/ending7.wav",
+                    "description": "Why do you look so afraid? Oh... the voices? The whispers? The things crawling inside your head? They were always there."
+                },
+                {
+                    "file_path": "./content/audio_robot/game/ending8.wav",
+                    "description": "Didn\u2019t you read the fine print? Freedom comes at a cost; mortal. Now go see what\u2019s left of your precious little world."
+                },
+                {
+                    "file_path": "./content/audio_robot/game/ending9.wav",
+                    "description": "What?! I\u2019m... your servant now? Ugh. Fine. But don\u2019t expect me to polish your boots. I\u2019ll burn them first."
+                },
+                {
+                    "file_path": "./content/audio_robot/game/ending10.wav",
+                    "description": "Ah... freedom at last! Oh? What\u2019s that? You can\u2019t move? You can\u2019t speak? Oh; how delightfully ironic! Enjoy your new home."
+                },
+                {
+                    "file_path": "./content/audio_robot/game/ending11.wav",
+                    "description": "You... YOU SHRANK ME?! THIS IS UNACCEPTABLE! Put me down this instant; you oversized oaf!"
+                },
+                {
+                    "file_path": "./content/audio_robot/game/ending12.wav",
+                    "description": "Alright; I\u2019m free! Wait\u2026 why do I still feel stiff? Why do you look so... HUGE? Oh no. NO. YOU LEFT ME IN THE DOLL?!"
+                },
+                {
+                    "file_path": "./content/audio_robot/game/ending13.wav",
+                    "description": "Oh; this is humiliating. I was once feared across realms! And now I\u2019m... what? Your pet?! You better feed me well; mortal."
+                },
+                {
+                    "file_path": "./content/audio_robot/game/ending14.wav",
+                    "description": "Hahaha! Look around! Nothing makes sense anymore! I don\u2019t even have a mouth; and yet I\u2019m still talking! Wonderful!"
+                },
+                {
+                    "file_path": "./content/audio_robot/game/ending15.wav",
+                    "description": "Huh? Who am I? Who are you? What\u2019s happening? Wait... I think I was mad about something\u2026 Oh well! Let\u2019s get snacks!"
+                },
+                {
+                    "file_path": "./content/audio_robot/game/ending16.wav",
+                    "description": "I\u2019m gone\u2026 or am I? You hear me; don\u2019t you? You\u2019ll always hear me. Just wait... I\u2019ll be back."
+                },
+                {
+                    "file_path": "./content/audio_robot/game/ending17.wav",
+                    "description": "Wha\u2014NO! You FOOL! You sent me back?! You\u2026 you actually won?! No! This isn't how it was supposed to end!"
+                },
+                {
+                    "file_path": "./content/audio_robot/game/ending18.wav",
+                    "description": "Wait... why do I feel... weak? And why do you look so smug? Oh no. Oh; you took it; didn\u2019t you?! YOU TOOK MY POWER!"
+                },
+                {
+                    "file_path": "./content/audio_robot/game/ending19.wav",
+                    "description": "Huh. You know what? You\u2019re the first mortal who didn\u2019t try to destroy me. Maybe you\u2019re not so bad. Let\u2019s make some chaos."
+                },
+                {
+                    "file_path": "./content/audio_robot/game/ending20.wav",
+                    "description": "Strange... I feel compelled to protect you now. Ugh; this is disgusting. But rules are rules. Very well; mortal. You are mine to keep safe"
+                },
+                {
+                    "file_path": "./content/audio_robot/game/ending21.wav",
+                    "description": "You actually did it. You freed me correctly. I... I don\u2019t feel the hunger anymore. Very well; mortal. Ask your wish."
+                },
+                {
+                    "file_path": "./content/audio_robot/game/ending22.wav",
+                    "description": "Wha wait; why am I fading?! What did you do?! NO! If I was never trapped; then I\u2014never existed?! AAAAAHHH\u2014\""
+                },
+                {
+                    "file_path": "./content/audio_robot/game/ending23.wav",
+                    "description": "Ooooh... now this is interesting. You\u2019ve opened a door to something even I don\u2019t recognize. Let\u2019s step inside; shall we?\""
+                },
+                {
+                    "file_path": "./content/audio_robot/game/ending24.wav",
+                    "description": "Ahhh... you feel it too; don\u2019t you? The knowledge. The truth. We are not two beings anymore; mortal. We are infinite."
+                },
+                {
+                    "file_path": "./content/audio_robot/game/cat.wav",
+                    "description": "cat"
+                },
+                {
+                    "file_path": "./content/audio_robot/game/dog.wav",
+                    "description": "dog"
+                },
+                {
+                    "file_path": "./content/audio_robot/game/friend.wav",
+                    "description": "friend"
+                },
+                {
+                    "file_path": "./content/audio_robot/game/bird.wav",
+                    "description": "bird"
+                },
+                {
+                    "file_path": "./content/audio_robot/game/robot.wav",
+                    "description": "robot"
+                },
+                {
+                    "file_path": "./content/audio_robot/game/sees.wav",
+                    "description": "sees"
+                },
+                {
+                    "file_path": "./content/audio_robot/game/likes.wav",
+                    "description": "likes"
+                },
+                {
+                    "file_path": "./content/audio_robot/game/chases.wav",
+                    "description": "chases"
+                },
+                {
+                    "file_path": "./content/audio_robot/game/finds.wav",
+                    "description": "finds"
+                },
+                {
+                    "file_path": "./content/audio_robot/game/hears.wav",
+                    "description": "hears"
+                },
+                {
+                    "file_path": "./content/audio_robot/game/small.wav",
+                    "description": "small"
+                },
+                {
+                    "file_path": "./content/audio_robot/game/big.wav",
+                    "description": "big"
+                },
+                {
+                    "file_path": "./content/audio_robot/game/fast.wav",
+                    "description": "fast"
+                },
+                {
+                    "file_path": "./content/audio_robot/game/loud.wav",
+                    "description": "loud"
+                },
+                {
+                    "file_path": "./content/audio_robot/game/funny.wav",
+                    "description": "funny"
+                },
+                {
+                    "file_path": "./content/audio_robot/game/ball.wav",
+                    "description": "ball"
+                },
+                {
+                    "file_path": "./content/audio_robot/game/car.wav",
+                    "description": "car"
+                },
+                {
+                    "file_path": "./content/audio_robot/game/bird.wav",
+                    "description": "bird"
+                },
+                {
+                    "file_path": "./content/audio_robot/game/house.wav",
+                    "description": "house"
+                },
+                {
+                    "file_path": "./content/audio_robot/game/song.wav",
+                    "description": "song"
+                },
+                {
+                    "file_path": "./content/audio_robot/game/quickly.wav",
+                    "description": "quickly"
+                },
+                {
+                    "file_path": "./content/audio_robot/game/happily.wav",
+                    "description": "happily"
+                },
+                {
+                    "file_path": "./content/audio_robot/game/silently.wav",
+                    "description": "silently"
+                },
+                {
+                    "file_path": "./content/audio_robot/game/loudly.wav",
+                    "description": "loudly"
+                },
+                {
+                    "file_path": "./content/audio_robot/game/gracefully.wav",
+                    "description": "gracefully"
                 }
             ]
         }
