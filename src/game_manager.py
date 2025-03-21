@@ -80,7 +80,7 @@ class SpeechGameInterface:
             ("dream", "moon", "shadow", "whisper"): "ending24.wav",
         }
 
-    def run(self):
+    def run(self) -> None:
         """
         Initializes the game
         """
@@ -128,7 +128,7 @@ class SpeechGameInterface:
         except Exception as e:
             logger.error(f"Audio file corrupted or not found: {e}")
 
-    def main_menu(self, retry_ctr: int):
+    def main_menu(self, retry_ctr: int) -> None:
         """
         Method that handles the menu for the speech based game.
         """
@@ -159,7 +159,7 @@ class SpeechGameInterface:
 
         self.main_menu(retry_ctr)
 
-    def main_game_state(self, retry_ctr: int):
+    def main_game_state(self, retry_ctr: int) -> None:
         """
         Main method that handles the main game state.
         """

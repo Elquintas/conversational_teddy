@@ -25,9 +25,9 @@ class MemoryGame:
         Initializes the class.
         """
         self.sounds = {
-            "dog": "./samples/animals/dog.wav",
-            "bear": "./samples/animals/bear.wav",
-            "cow": "./samples/animals/cow.wav",
+            "dog": "./samples/instruments/piano.wav",
+            "bear": "./samples/instruments/guitar.wav",
+            "cow": "./samples/instruments/drum.wav",
         }
         self.sequence = []
         self.asr_model = asr_model
@@ -70,12 +70,11 @@ class MemoryGame:
         logger.info("Memorize the order, and say it correctly afterwards!")
 
         max_ctr = 0
-
         self.generate_sequence()
-        self.play_sequence()
 
         while max_ctr < self.max_retries:
 
+            self.play_sequence()
             user_sequence = self.get_user_input()
             game_sequence = " ".join(self.sequence)
 
@@ -84,10 +83,12 @@ class MemoryGame:
 
             if game_sequence == user_sequence:
                 logger.info("Correct! You have a great memory!")
+                play_sound("./samples/system/correct.wav")
                 return True
             else:
                 logger.info(f"Wrong! The correct sequence was: {game_sequence}")
                 logger.info("Try again!")
+                play_sound("./samples/system/wrong.wav")
                 max_ctr += 1
 
         return False

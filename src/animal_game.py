@@ -55,9 +55,11 @@ class AnimalGame:
 
             if animal in text:
                 logger.info("success! you've guessed it.")
+                play_sound("./samples/system/correct.wav")
                 return True
             else:
                 logger.info("You failed... Try again")
+                play_sound("./samples/system/wrong.wav")
                 retry_ctr += 1
 
         logger.info("Well... It seems you'll have to try again some other time.")

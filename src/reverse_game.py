@@ -96,9 +96,11 @@ class ReverseGame:
 
             if answer == solution:
                 logger.info("Perfect!")
+                play_sound("./samples/system/correct.wav")
                 return True
             else:
                 logger.info("Wrong... try again.")
+                play_sound("./samples/system/wrong.wav")
                 retry_ctr += 1
 
         logger.info("Try again some other time...")

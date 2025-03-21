@@ -164,9 +164,11 @@ class PitchGame:
         # Final result
         if correct_count == self.NUM_NOTES:
             logger.info("\nPerfect! You hummed all the notes correctly.\n")
+            play_sound("./samples/system/correct.wav")
             return True
         else:
             logger.info(
                 f"\nYou got {correct_count}/{self.NUM_NOTES} correct. Try again!\n"
             )
+            play_sound("./samples/system/wrong.wav")
             return False
