@@ -80,7 +80,6 @@ class ReverseGame:
         """
         text = self.generate_sentence()
         logger.info(text)
-        self.play_sequence(text)
 
         solution = self.reverse_words(text)
         retry_ctr = 0
@@ -91,7 +90,7 @@ class ReverseGame:
 
         while retry_ctr < self.max_retries:
             logger.info(f"sentence: {text}")
-            # answer = input()
+            self.play_sequence(text)
             answer = self.get_user_input()
 
             if answer == solution:
@@ -101,11 +100,8 @@ class ReverseGame:
             else:
                 logger.info("Wrong... try again.")
                 play_sound("./samples/system/wrong.wav")
+                play_sound(self.audio_path + "try_again1.wav")
                 retry_ctr += 1
 
         logger.info("Try again some other time...")
         return False
-
-
-# game = ReverseGame(asr_model="placeholder")
-# game.play()

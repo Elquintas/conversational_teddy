@@ -16,8 +16,8 @@ Marvin currently supports the following 6 intentions:
 - set you free!
 ```
 
-Once you attempt to free Marvin from his curse ("set you free!"), the system will guide you through a series of 4 minigames that award each one of the four magical words, used to set him free.
-Once everything is complete and you've gathered all the words, you may attempt to set him free. But be warned—speaking them in the wrong order may trigger unforeseen consequences.
+Should you attempt to free Marvin from his curse (saying: "I want to set you free!"), the system will guide you through a series of 4 minigames that award each one of the four magical words, used to set him free.
+Once everything is complete and you've gathered all the words, you may attempt to set him free. But be warnedi! Speaking them in the different orders may trigger unforeseen consequences, leading to different endings.
 
 ## Installation
 
@@ -35,7 +35,7 @@ In order to generate the user content, please run the following script:
 ```sh
 cd tts-gen/robot/ && poetry run python tts.py
 ```
-This script uses a text-to-speech custom recipe to generate a robotic voice. This can take several minutes. Once the script finishes, and all content is properly generated, Marvin is ready to be launched.
+This script uses a text-to-speech custom recipe to generate a robotic voice. This can take several minutes. Once the script finishes, and all content is properly generated, Marvin is ready to be launched. You only have to generate the text-to-speech audio once.
 
 ## How to Use
 

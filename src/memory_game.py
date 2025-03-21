@@ -25,13 +25,14 @@ class MemoryGame:
         Initializes the class.
         """
         self.sounds = {
-            "dog": "./samples/instruments/piano.wav",
-            "bear": "./samples/instruments/guitar.wav",
-            "cow": "./samples/instruments/drum.wav",
+            "piano": "./samples/instruments/piano.wav",
+            "guitar": "./samples/instruments/guitar.wav",
+            "drum": "./samples/instruments/drum.wav",
         }
         self.sequence = []
         self.asr_model = asr_model
         self.max_retries = 3
+        self.audio_path = "./content/audio_robot/game/"
 
     def generate_sequence(self, length=3):
         """
@@ -89,6 +90,7 @@ class MemoryGame:
                 logger.info(f"Wrong! The correct sequence was: {game_sequence}")
                 logger.info("Try again!")
                 play_sound("./samples/system/wrong.wav")
+                play_sound(self.audio_path + "try_again3.wav")
                 max_ctr += 1
 
         return False

@@ -181,10 +181,10 @@ class SpeechGameInterface:
         self.play_game_audio("main_game_state_audio3.wav")
 
         # Remove after testing is done
-        self.north_check = True
+        # self.north_check = True
         # south_check = True
-        self.east_check = True
-        self.west_check = True
+        # self.east_check = True
+        # self.west_check = True
 
         # command = input()
         command = self.record_and_transcribe(audio_dur=3)

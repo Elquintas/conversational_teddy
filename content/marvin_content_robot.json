@@ -2272,7 +2272,7 @@
             "options": [
                 {
                     "file_path": "./content/audio_robot/game/main_menu_audio1.wav",
-                    "description": "So you really want to set me free hum? I can be a generous god..."
+                    "description": "So you really want to set me free hum? I could use the help..."
                 },
                 {
                     "file_path": "./content/audio_robot/game/main_menu_audio2.wav",
@@ -2284,19 +2284,19 @@
                 },
                 {
                     "file_path": "./content/audio_robot/game/main_game_state_audio1.wav",
-                    "description": "You will have to explore the depths of my soul and gather the magic words."
+                    "description": "You will have to explore the depths and corners of my soul to gather the magic words."
                 },
                 {
                     "file_path": "./content/audio_robot/game/main_game_state_audio2.wav",
-                    "description": "To explore the four corners; say north; south; east or west"
+                    "description": "You're are at the heart of my soul; you can explore it by saying; say north; south; east or west"
                 },
                 {
                     "file_path": "./content/audio_robot/game/main_game_state_audio3.wav",
-                    "description": "You can say exit to quit or free to attempt to finally free me"
+                    "description": "Say exit to quit or free to finally free me"
                 },
                 {
                     "file_path": "./content/audio_robot/game/main_game_state_audio4.wav",
-                    "description": "You need to gather all the magic words to attempt to free me"
+                    "description": "You first need to unlock all the magic words to attempt to free me"
                 },
                 {
                     "file_path": "./content/audio_robot/game/main_game_state_audio5.wav",
@@ -2348,7 +2348,7 @@
                 },
                 {
                     "file_path": "./content/audio_robot/game/game_state_east_audio2.wav",
-                    "description": "Remember the sequence in which the following sounds are played and get a magic word. Ready? Go!"
+                    "description": "Remember the sequence in which the drum; piano and guitar sounds are played and say the sequence. Ready? Go!"
                 },
                 {
                     "file_path": "./content/audio_robot/game/game_state_east_audio3.wav",
@@ -2380,7 +2380,7 @@
                 },
                 {
                     "file_path": "./content/audio_robot/game/game_state_final_audio2.wav",
-                    "description": "Say those four magical words... But say them in the correct order!"
+                    "description": "Say those four magical words... But be careful in their order"
                 },
                 {
                     "file_path": "./content/audio_robot/game/game_state_final_audio3.wav",
@@ -2589,6 +2589,18 @@
                 {
                     "file_path": "./content/audio_robot/game/gracefully.wav",
                     "description": "gracefully"
+                },
+                {
+                    "file_path": "./content/audio_robot/game/try_again1.wav",
+                    "description": "hmm not quite there yet; try again or articulate better."
+                },
+                {
+                    "file_path": "./content/audio_robot/game/try_again2.wav",
+                    "description": "wrong answer; try again or articulate better."
+                },
+                {
+                    "file_path": "./content/audio_robot/game/try_again3.wav",
+                    "description": "that's not it. try again or articulate better."
                 }
             ]
         }

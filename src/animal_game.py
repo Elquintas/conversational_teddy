@@ -21,13 +21,13 @@ class AnimalGame:
         self.asr_model = asr_model
         self.max_retries = 3
         self.audio_file = ".game_audio.wav"
+        self.audio_path = "./content/audio_robot/game/"
         self.animal_lib = {
             "cow": "./samples/animals/cow.wav",
             "cricket": "./samples/animals/cricket.wav",
             "dog": "./samples/animals/dog.wav",
             "donkey": "./samples/animals/donkey.wav",
             "horse": "./samples/animals/horse.wav",
-            # "monkey": "./samples/animals/monkey.wav",
             "wolf": "./samples/animals/wolf.wav",
             "bear": "./samples/animals/bear.wav",
             "eagle": "./samples/animals/eagle.wav",
@@ -60,6 +60,7 @@ class AnimalGame:
             else:
                 logger.info("You failed... Try again")
                 play_sound("./samples/system/wrong.wav")
+                play_sound(self.audio_path + "try_again2.wav")
                 retry_ctr += 1
 
         logger.info("Well... It seems you'll have to try again some other time.")
