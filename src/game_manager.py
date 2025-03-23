@@ -98,9 +98,7 @@ class SpeechGameInterface:
         Function to record user input audio and transcribe
         """
         fname = self.audio_file
-        # play_sound("./samples/system/start_rec.wav")
         record_audio(file_name=fname, audio_dur=audio_dur)
-        # play_sound("./samples/system/stop_rec_full.wav")
         text = transcribe(self.asr_model, fname)
         if os.path.exists(fname):
             os.remove(fname)
@@ -144,7 +142,6 @@ class SpeechGameInterface:
         logger.info("Write 'yes' to set me free or 'no' to exit")
         self.play_game_audio("main_menu_audio2.wav")
 
-        # command = input()
         command = self.record_and_transcribe(audio_dur=3)
 
         if "yes" in command:

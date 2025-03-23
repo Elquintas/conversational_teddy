@@ -34,13 +34,13 @@ class MemoryGame:
         self.max_retries = 3
         self.audio_path = "./content/audio_robot/game/"
 
-    def generate_sequence(self, length=3):
+    def generate_sequence(self, length=3) -> None:
         """
         Generates a random sequence of sounds.
         """
         self.sequence = [random.choice(list(self.sounds.keys())) for _ in range(length)]
 
-    def play_sequence(self):
+    def play_sequence(self) -> None:
         """
         Plays the generated sound sequence.
         """
