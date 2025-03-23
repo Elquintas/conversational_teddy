@@ -20,7 +20,7 @@ Memory game: User needs to remember a sequence of sounds.
 
 
 class MemoryGame:
-    def __init__(self, asr_model):
+    def __init__(self, asr_model, LENGTH=3):
         """
         Initializes the class.
         """
@@ -30,14 +30,16 @@ class MemoryGame:
             "drum": "./samples/instruments/drum.wav",
         }
         self.sequence = []
+        self.sequence_length = LENGTH
         self.asr_model = asr_model
         self.max_retries = 3
         self.audio_path = "./content/audio_robot/game/"
 
-    def generate_sequence(self, length=3) -> None:
+    def generate_sequence(self) -> None:  # , length=3) -> None:
         """
         Generates a random sequence of sounds.
         """
+        length = self.sequence_length
         self.sequence = [random.choice(list(self.sounds.keys())) for _ in range(length)]
 
     def play_sequence(self) -> None:

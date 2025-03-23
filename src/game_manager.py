@@ -3,8 +3,6 @@ import os
 import logging
 import time
 
-# import itertools
-
 from utils.audio_utils import record_audio, play_sound, transcribe
 
 from animal_game import AnimalGame
@@ -144,9 +142,32 @@ class SpeechGameInterface:
 
         command = self.record_and_transcribe(audio_dur=3)
 
-        if "yes" in command:
+        if "easy" in command:
+            self.animal_game = AnimalGame(self.asr_model)
+            self.pitch_game = PitchGame(
+                self.asr_model, NUM_NOTES=2, DURATION=1.5
+            )  # 1.0
+            self.memory_game = MemoryGame(self.asr_model, LENGTH=2)
+            self.reverse_game = ReverseGame(self.asr_model, DIFFICULTY="easy")
             self.main_game_state(retry_ctr=0)
-        elif "no" in command or retry_ctr > self.max_retries:
+        elif "medium" in command:
+            self.animal_game = AnimalGame(self.asr_model)
+            self.pitch_game = PitchGame(self.asr_model, NUM_NOTES=3, DURATION=1.5)
+            self.memory_game = MemoryGame(self.asr_model, LENGTH=3)
+            self.reverse_game = ReverseGame(self.asr_model, DIFFICULTY="medium")
+            self.main_game_state(retry_ctr=0)
+        elif "hard" in command:
+            self.animal_game = AnimalGame(self.asr_model)
+            self.pitch_game = PitchGame(
+                self.asr_model, NUM_NOTES=5, DURATION=1.5
+            )  # 2.5
+            self.memory_game = MemoryGame(self.asr_model, LENGTH=5)
+            self.reverse_game = ReverseGame(self.asr_model, DIFFICULTY="hard")
+            self.main_game_state(retry_ctr=0)
+
+        # if "yes" in command:
+        #    self.main_game_state(retry_ctr=0)
+        elif "exit" in command or retry_ctr > self.max_retries:
             self.play = False
             return
         else:
@@ -177,13 +198,6 @@ class SpeechGameInterface:
         logger.info("... or 'free' to attempt to finally free me.")
         self.play_game_audio("main_game_state_audio3.wav")
 
-        # Remove after testing is done
-        # self.north_check = True
-        # south_check = True
-        # self.east_check = True
-        # self.west_check = True
-
-        # command = input()
         command = self.record_and_transcribe(audio_dur=3)
 
         if command:
@@ -332,7 +346,6 @@ class SpeechGameInterface:
         )
         self.play_game_audio("game_state_final_audio2.wav")
 
-        # command = input()
         command = self.record_and_transcribe(audio_dur=7)
         print(command)
 

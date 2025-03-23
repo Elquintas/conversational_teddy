@@ -102,10 +102,10 @@ def play_sound(filename) -> None:
     """
     Playback function for any audio
     """
-
-    data, fs = sf.read(filename, dtype="float32")
-
-    # Ignores the first 100 samples due to loud clicking sound
-    sd.play(data[100:], 22050)  # 48000) #35000)
-    # status = sd.wait()
-    sd.wait()
+    try:
+        data, fs = sf.read(filename, dtype="float32")
+        # Ignores the first 100 samples due to loud clicking sound
+        sd.play(data[100:], 22050)  # 48000) #35000)
+        sd.wait()
+    except Exception as e:
+        logger.error(f"Audio file error: {e}")

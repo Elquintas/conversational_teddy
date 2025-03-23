@@ -17,12 +17,11 @@ Marvin currently supports the following 6 intentions:
 ```
 
 Should you attempt to free Marvin from his curse (saying: "I want to set you free!"), the system will guide you through a series of 4 minigames that award each one of the four magical words, used to release Marvin.
-Once everything is complete and you've gathered all the words, you may attempt say the msequentially to set him free. But be warnedi! Speaking them in the different orders may trigger unforeseen consequences, leading to different endings.
+Once everything is complete and you've gathered all the words, you may attempt say them sequentially to set him free. But be warned! Speaking them in the different orders may trigger unforeseen consequences, leading to different endings.
 
 ## Installation
 
-Marvin uses python 3.10.12 and poetry as a dependency manager. If you do not have poetry installed in your system, please refer to poetry's installation guide.
-In order to properly build the virtual environment, run the following commands (skip if already installed):
+Marvin uses python 3.10.12 and poetry as a dependency manager. If you do not have poetry installed in your system, please refer to poetry's installation guide. In order to properly build the virtual environment, run the following commands (skip if already installed):
 
 ```sh
 pyenv install 3.10.12
@@ -35,9 +34,7 @@ Run the following command to install the dependencies of this project
 poetry install --no-root
 ```
 
-Marvin relies on pre-synthesized audio files, that are retrieved following the user query. This speeds up inference, meaning that all content is already pre-generated and deterministic prior to any interactions.
-
-In order to generate the user content, please run the following script:
+Marvin relies on pre-synthesized audio files, that are retrieved following the user query. This speeds up inference, meaning that all content is already pre-generated and deterministic prior to any interactions. In order to generate the user content, please run the following script:
 
 ```sh
 cd tts-gen/robot/ && poetry run python tts.py
@@ -58,15 +55,13 @@ Please refer to the following command to launch a terminal-based instance of Mar
 poetry run python src/main.py
 ```
 
-Alternatively, you can run the run.sh. Note that this bash scipt also launches the synthatic data generation script if no generated audio is detected.
+Alternatively, you can run the run.sh. Note that this bash script also launches the synthatic data generation script if no generated audio is detected.
 
 ```
 bash run.sh
 ```
 
-Once the system properly loads, we are finally ready to interact with Marvin.
-
-Say 'Marvin' to wake the system up and ask him to tell you any one of the supported intentions for a brief interaction.
+Once the system properly loads, we are finally ready to interact with Marvin. Say 'Marvin' to wake the system up and ask him to tell you any one of the supported intentions for a brief interaction.
 
 e.g.
 ```sh
@@ -85,6 +80,24 @@ e.g.
    - You: "I want to set you free."
    - Marvin: "So you want to set me free hein? <game class starts>."
 ```
+
+## Minigames
+
+Marvin contains 4 speech-based minigames that are prompted when someone attempts to free him. These games can have different difficulty levelsbased on user preference. The games are as follows:
+
+- Pitch-based game (North Section): In this game the user needs to match the pitch of a short series of musical notes
+- Animal guessing game (South Section): In this game the user needs to guess the animal sound that was played
+- Memory game (East Section): The user needs to say the sequence in whicha set of three different sounds were played (piano, drum and guitar)
+- Reverse game (West Section): The user needs to flip the words in a sentence (e.g. "cat sees bird" --> "bird sees cat")
+
+The following table illustrates the difficulty levels for each game:
+
+| Game       | easy   | medium | hard   |
+|------------|--------|--------|--------|
+|pitch game  |2 notes |3 notes |5 notes |
+|animal game |1 sound |1 sound |1 sound |
+|memory game |2 sounds|3 sounds|5 sounds|
+|reverse game|3 words |4 words |5 words |
 
 ## Microphone Setup
 

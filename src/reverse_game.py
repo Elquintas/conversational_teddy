@@ -20,12 +20,14 @@ Reverse game: User needs to reverse the words of a given sentence.
 
 
 class ReverseGame:
-    def __init__(self, asr_model):
+    def __init__(self, asr_model, DIFFICULTY="easy"):
         """
         Initializes the class.
         """
         self.asr_model = asr_model
         self.max_retries = 3
+
+        self.difficulty = DIFFICULTY
 
         self.audio_path = "./content/audio_robot/game/"
 
@@ -35,7 +37,28 @@ class ReverseGame:
         self.objects = ["ball", "car", "bird", "house", "song"]
         self.adverbs = ["quickly", "happily", "silently", "loudly", "gracefully"]
 
-    def generate_sentence(self) -> str:
+    def generate_sentence_easy(self) -> str:
+        """
+        Generates or gathers a random easy sentence.
+        """
+        return (
+            f"{random.choice(self.subjects)} "
+            f"{random.choice(self.verbs)} "
+            f"{random.choice(self.objects)} "
+        )
+
+    def generate_sentence_medium(self) -> str:
+        """
+        Generates or gathers a random medium sentence.
+        """
+        return (
+            f"{random.choice(self.subjects)} "
+            f"{random.choice(self.verbs)} "
+            f"{random.choice(self.adjectives)} "
+            f"{random.choice(self.objects)} "
+        )
+
+    def generate_sentence_hard(self) -> str:
         """
         Generates or gathers a random sentence.
         """
@@ -78,9 +101,14 @@ class ReverseGame:
         """
         Main method used to launch an instance of the reverse game.
         """
-        text = self.generate_sentence()
-        logger.info(text)
+        if self.difficulty == "easy":
+            text = self.generate_sentence_easy()
+        elif self.difficulty == "medium":
+            text = self.generate_sentence_medium()
+        else:
+            text = self.generate_sentence_hard()
 
+        logger.info(text)
         solution = self.reverse_words(text)
         retry_ctr = 0
 

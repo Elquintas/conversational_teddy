@@ -1,27 +1,27 @@
 content_type,text
-main_menu_audio1,So you really want to set me free hum? I could use the help...
-main_menu_audio2,Say yes to attempt to set me free or no to exit
+main_menu_audio1,So you really want to set me free hum? I could use the help... You could do so in increasing levels of difficulty if you're brave enough.
+main_menu_audio2,say easy; medium or hard to choose the difficulty; or exit to quit.
 main_menu_audio3,I did not understand that.
 main_game_state_audio1,You will have to explore the depths and corners of my soul to gather the magic words.
-main_game_state_audio2,You're are at the heart of my soul; you can explore it by saying north; south; east or west
+main_game_state_audio2,You're currently are at the heart of my soul; you can explore it by saying north; south; east or west
 main_game_state_audio3,Say exit to quit or free to finally free me
 main_game_state_audio4,You first need to unlock all the magic words to attempt to free me
 main_game_state_audio5,I did not get that
-game_state_north_audio1,I see that you have reached the north part of my soul
+game_state_north_audio1,I see that you have reached the north part of my soul; do you also feel the cold?
 game_state_north_audio2,To get the magic word; you'll have to match the pitch of a sacred tune after it plays. ready? Go!
 game_state_north_audio3,You're not that bad of a singer after all! The mystical word is Moon
 game_state_north_audio4,Gather the remaining words; and free me at last!
 game_state_north_audio5,Not very matchy matchy hum? Try again!
 game_state_north_audio6,Well... Try again later.
-game_state_south_audio1,you are currently in the south part of my soul
+game_state_south_audio1,Oh; I see that someone ventured into the south part of my soul
 game_state_south_audio2,Guess the animal sound and get one magic word. Do it now; ready? Go!
 game_state_south_audio3,Very knowledgable in zoology. the mystical word is dream.
 game_state_south_audio4,Continue gathering words to set me free.
-game_state_east_audio1,You're now in the east part of my soul
+game_state_east_audio1,You've reached the far east part of my soul
 game_state_east_audio2,Remember the sequence in which the drum; piano and guitar sounds are played and say the sequence. Ready? Go!
 game_state_east_audio3,Great memory. the magic word is shadow
 game_state_east_audio4,Once you have all the words you can set me free
-game_state_west_audio1,You've reached the west part of my soul
+game_state_west_audio1,I see that you travelled to the wild west part of my soul
 game_state_west_audio2,Reverse the word order in the following sentence and get another magic word
 game_state_west_audio3,Great reversing skills. The magic word is whisper
 game_state_west_audio4,set me free once you have all the words
