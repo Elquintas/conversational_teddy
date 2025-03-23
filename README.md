@@ -31,7 +31,7 @@ pipx install poetry
 ```
 Skip this command if you already have a python 3.10.12 version installed.
 
-``sh
+```sh
 poetry install --no-root
 ```
 
