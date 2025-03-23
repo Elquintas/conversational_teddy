@@ -33,7 +33,7 @@ class AnimalGame:
             "eagle": "./samples/animals/eagle.wav",
             "raccoon": "./samples/animals/raccoon.wav",
             "pig": "./samples/animals/pig.wav",
-            "monkey": "./samples/animals/monkey2.wav",
+            "monkey": "./samples/animals/monkey.wav",
         }
 
     def play(self) -> bool:

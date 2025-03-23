@@ -21,11 +21,18 @@ Once everything is complete and you've gathered all the words, you may attempt t
 
 ## Installation
 
-Marvin uses poetry as a dependency manager. If you do not have poetry installed in your system, please refer to poetry's installation guide.
-In order to properly build the virtual environment, run the following command:
+Marvin uses python 3.10.12 and poetry as a dependency manager. If you do not have poetry installed in your system, please refer to poetry's installation guide.
+In order to properly build the virtual environment, run the following commands:
 
 ```sh
-$ poetry install --no-root
+pyenv install 3.10.12
+brew install portaudio ffmpeg
+pipx install poetry
+```
+Skip this command if you already have a python 3.10.12 version installed.
+
+``sh
+poetry install --no-root
 ```
 
 Marvin relies on pre-synthesized audio files, that are retrieved following the user query. This speeds up inference, meaning that all content is already pre-generated à priori to any interactions.
