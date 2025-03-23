@@ -13,29 +13,29 @@ Marvin currently supports the following 6 intentions:
 - riddle
 - tongue-twister
 
-- set you free!
+- I want to set you free! (speech-based game)
 ```
 
-Should you attempt to free Marvin from his curse (saying: "I want to set you free!"), the system will guide you through a series of 4 minigames that award each one of the four magical words, used to set him free.
-Once everything is complete and you've gathered all the words, you may attempt to set him free. But be warnedi! Speaking them in the different orders may trigger unforeseen consequences, leading to different endings.
+Should you attempt to free Marvin from his curse (saying: "I want to set you free!"), the system will guide you through a series of 4 minigames that award each one of the four magical words, used to release Marvin.
+Once everything is complete and you've gathered all the words, you may attempt say the msequentially to set him free. But be warnedi! Speaking them in the different orders may trigger unforeseen consequences, leading to different endings.
 
 ## Installation
 
 Marvin uses python 3.10.12 and poetry as a dependency manager. If you do not have poetry installed in your system, please refer to poetry's installation guide.
-In order to properly build the virtual environment, run the following commands:
+In order to properly build the virtual environment, run the following commands (skip if already installed):
 
 ```sh
 pyenv install 3.10.12
 brew install portaudio ffmpeg
 pipx install poetry
 ```
-Skip this command if you already have a python 3.10.12 version installed.
+Run the following command to install the dependencies of this project
 
 ```sh
 poetry install --no-root
 ```
 
-Marvin relies on pre-synthesized audio files, that are retrieved following the user query. This speeds up inference, meaning that all content is already pre-generated à priori to any interactions.
+Marvin relies on pre-synthesized audio files, that are retrieved following the user query. This speeds up inference, meaning that all content is already pre-generated and deterministic prior to any interactions.
 
 In order to generate the user content, please run the following script:
 
@@ -46,7 +46,7 @@ This script uses a text-to-speech custom recipe to generate a robotic voice. Thi
 
 ## How to Use
 
-First, do not forget to export the path to the config file:
+Export the path to the config file:
 
 ```sh
 export CONFIG_PATH=$(pwd)/config/config.yaml
@@ -57,7 +57,14 @@ Please refer to the following command to launch a terminal-based instance of Mar
 ```sh
 poetry run python src/main.py
 ```
-Once the system properly loads, we are finally ready for some interactions.
+
+Alternatively, you can run the run.sh. Note that this bash scipt also launches the synthatic data generation script if no generated audio is detected.
+
+```
+bash run.sh
+```
+
+Once the system properly loads, we are finally ready to interact with Marvin.
 
 Say 'Marvin' to wake the system up and ask him to tell you any one of the supported intentions for a brief interaction.
 
