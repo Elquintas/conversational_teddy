@@ -106,6 +106,9 @@ def main():
     logger.info("MARVIN STARTED")
     streaming = True
 
+    intro_file_list = content_data["intentions"]["intro"]["options"]
+    play_random_sound(intro_file_list)
+
     while True:
 
         if not p == pa.PyAudio():

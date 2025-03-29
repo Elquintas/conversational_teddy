@@ -83,7 +83,7 @@ e.g.
 
 ## Minigames
 
-Marvin contains 4 speech-based minigames that are prompted when someone attempts to free him. These games can have different difficulty levelsbased on user preference. The games are as follows:
+Marvin contains 4 speech-based minigames that are prompted when someone attempts to free him. These games can have different difficulty levels based on user preference. The games are as follows:
 
 - Pitch-based game (North Section): In this game the user needs to match the pitch of a short series of musical notes
 - Animal guessing game (South Section): In this game the user needs to guess the animal sound that was played
@@ -95,7 +95,7 @@ The following table illustrates the difficulty levels for each game:
 | Game       | easy   | medium | hard   |
 |------------|--------|--------|--------|
 |pitch game  |2 notes |3 notes |5 notes |
-|animal game |1 sound |1 sound |1 sound |
+|animal game |1 sound                   |
 |memory game |2 sounds|3 sounds|5 sounds|
 |reverse game|3 words |4 words |5 words |
 

@@ -2272,11 +2272,11 @@
             "options": [
                 {
                     "file_path": "./content/audio_robot/game/main_menu_audio1.wav",
-                    "description": "So you really want to set me free hum? I could use the help..."
+                    "description": "So you really want to set me free hum? I could use the help... You could do so in increasing levels of difficulty if you're brave enough."
                 },
                 {
                     "file_path": "./content/audio_robot/game/main_menu_audio2.wav",
-                    "description": "Say yes to attempt to set me free or no to exit"
+                    "description": "say easy; medium or hard to choose the difficulty; or exit to quit."
                 },
                 {
                     "file_path": "./content/audio_robot/game/main_menu_audio3.wav",
@@ -2288,7 +2288,7 @@
                 },
                 {
                     "file_path": "./content/audio_robot/game/main_game_state_audio2.wav",
-                    "description": "You're are at the heart of my soul; you can explore it by saying; say north; south; east or west"
+                    "description": "You're currently are at the heart of my soul; you can explore it by saying north; south; east or west"
                 },
                 {
                     "file_path": "./content/audio_robot/game/main_game_state_audio3.wav",
@@ -2304,7 +2304,7 @@
                 },
                 {
                     "file_path": "./content/audio_robot/game/game_state_north_audio1.wav",
-                    "description": "I see that you have reached the north part of my soul"
+                    "description": "I see that you have reached the north part of my soul; do you also feel the cold?"
                 },
                 {
                     "file_path": "./content/audio_robot/game/game_state_north_audio2.wav",
@@ -2328,7 +2328,7 @@
                 },
                 {
                     "file_path": "./content/audio_robot/game/game_state_south_audio1.wav",
-                    "description": "you are currently in the south part of my soul"
+                    "description": "Oh; I see that someone ventured into the south part of my soul"
                 },
                 {
                     "file_path": "./content/audio_robot/game/game_state_south_audio2.wav",
@@ -2344,7 +2344,7 @@
                 },
                 {
                     "file_path": "./content/audio_robot/game/game_state_east_audio1.wav",
-                    "description": "You're now in the east part of my soul"
+                    "description": "You've reached the far east part of my soul"
                 },
                 {
                     "file_path": "./content/audio_robot/game/game_state_east_audio2.wav",
@@ -2360,7 +2360,7 @@
                 },
                 {
                     "file_path": "./content/audio_robot/game/game_state_west_audio1.wav",
-                    "description": "You've reached the west part of my soul"
+                    "description": "I see that you travelled to the wild west part of my soul"
                 },
                 {
                     "file_path": "./content/audio_robot/game/game_state_west_audio2.wav",
@@ -2601,6 +2601,15 @@
                 {
                     "file_path": "./content/audio_robot/game/try_again3.wav",
                     "description": "that's not it. try again or articulate better."
+                }
+            ]
+        },
+        "intro": {
+            "intent": "intro",
+            "options": [
+                {
+                    "file_path": "./content/audio_robot/intro/intro_1.wav",
+                    "description": "Ah,finally\u2014someone to talk to! I\u2019m a mighty demon\u2026 trapped in this ridiculous doll. But hey, at least I can tell some stories, crack jokes, and if you\u2019re clever enough, maybe\u2014just maybe\u2014you can set me free. Or, you know, doom us both. No pressure. So, what\u2019ll it be? A story? A joke? Or setting me free?"
                 }
             ]
         }

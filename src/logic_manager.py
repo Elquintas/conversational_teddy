@@ -57,7 +57,7 @@ def teddy_server_logic(prompt, data, asr_model):
     proverb_pattern = r"(proverb|phrase|wisdom|traditional|prover)"
     tonguetwister_pattern = r"(tongue|twister|toister|tonggue|twistter)"
 
-    game_pattern = r"(set|free|set you free|break)"
+    game_pattern = r"(set|free|set you free|break|curse|escape)"
 
     if re.search(story_pattern, prompt):
         option_list = data["intentions"]["story"]["options"]

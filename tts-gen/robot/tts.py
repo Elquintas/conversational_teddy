@@ -112,6 +112,7 @@ def main():
         "bye": "bye_list.csv",
         "story": "story_list.csv",
         "game": "game_answers_list.csv",
+        "intro": "intro_message_list.csv",
     }
 
     board = Pedalboard(
