@@ -95,7 +95,7 @@ The following table illustrates the difficulty levels for each game:
 | Game       | easy   | medium | hard   |
 |------------|--------|--------|--------|
 |pitch game  |2 notes |3 notes |5 notes |
-|animal game |1 sound                   |
+|animal game |1 sound |1 sound |1 sound |
 |memory game |2 sounds|3 sounds|5 sounds|
 |reverse game|3 words |4 words |5 words |
 
@@ -107,6 +107,14 @@ The following simple script can be used to list all of the available devices and
 
 ```sh
 poetry run python extras/mic_idx_finder.py
+```
+
+## Tests
+
+In order to run the tests please refer to the following command:
+
+```sh
+poetry run pytests tests/
 ```
 
 ## Notes
