@@ -1,23 +1,28 @@
-# Marvin the Demon, an interactive speech-based game
+# Set Marvin free, an interactive speech-based game
 
 ## Summary
 
-Welcome to Marvin, a demon trapped inside a voodo doll that you need to set free through simple and deterministic speech-based interactions.
+Welcome to Marvin, a demon trapped inside a voodo doll that you need to set free through simple, voice enabled minigames and speech-based interactions.
 
-Marvin currently supports the following 6 intentions:
-```sh
-- story
-- joke
-- fact
-- proverb
-- riddle
-- tongue-twister
+Marvin currently supports the following intentions:
 
-- I want to set you free! (speech-based game)
-```
+| Intent         | Voice command                       |
+|----------------|-------------------------------------|
+| Speech game    | "I want to set you <u>free</u> [^1]"|
+|----------------|-------------------------------------|
+| story          | "tell me a <u>story</u>"            |
+| joke           | "tell me a <u>joke</u>"             |
+| fact           | "I want to learn a <u>fact</u>"     |
+| proverb        | "teach me a <u>proverb</u>"         |
+| riddle         | "tell me a <u>riddle</u>"           |
+| tongue-twister | "tell me a <u>tongue-twister</u>"   |
 
-Should you attempt to free Marvin from his curse (saying: "I want to set you free!"), the system will guide you through a series of 4 minigames that award each one of the four magical words, used to release Marvin.
+[^1]: The underlined words correspond to the main regex expression being matched for each intent
+
+Should you attempt to free Marvin from his curse, the system will guide you through a series of 4 minigames that award each one of the four magical words, used to release Marvin.
 Once everything is complete and you've gathered all the words, you may attempt say them sequentially to set him free. But be warned! Speaking them in the different orders may trigger unforeseen consequences, leading to different endings.
+
+Marvin was designed to run on a Raspberry Pi to more easily be embedded inside a plush toy.
 
 ## Installation
 
