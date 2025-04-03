@@ -8,19 +8,19 @@ Marvin currently supports the following intentions:
 
 | Intent         | Voice command                       |
 |----------------|-------------------------------------|
-| Speech game    | "I want to set you **free** [^1]"   |
-| story          | "tell me a **story**"               |
-| joke           | "tell me a **joke**"                |
-| fact           | "I want to learn a **fact**"        |
-| proverb        | "teach me a **proverb**"            |
-| riddle         | "tell me a **riddle**"              |
-| tongue-twister | "tell me a **tongue-twister**"      |
+| SPEECH GAME    | "I want to set you **free** [^1]"   |
+| STORY          | "tell me a **story**"               |
+| JOKE           | "tell me a **joke**"                |
+| FACT           | "I want to learn a **fact**"        |
+| PROVERB        | "teach me a **proverb**"            |
+| RIDDLE         | "tell me a **riddle**"              |
+| TONGUE-TWISTER | "tell me a **tongue-twister**"      |
 
 [^1]: Bold words correspond to the main regex expression being matched for each intent
 
 Marvin is a python project, that uses poetry as a dependency manager. It was designed to run offline on a Raspberry Pi to more easily be embedded inside a plush toy.
 
-## Installation
+## Installation Guide
 
 Marvin uses python 3.10.12 and poetry as a dependency manager. If you do not have poetry installed in your system, please refer to poetry's installation guide. In order to properly build the virtual environment, run the following commands (skip if already installed):
 
@@ -42,7 +42,7 @@ cd tts-gen/robot/ && poetry run python tts.py
 ```
 This script uses a text-to-speech custom recipe to generate a robotic voice. This can take several minutes. Once the script finishes, and all content is properly generated, Marvin is ready to be launched. You only have to generate the text-to-speech audio once.
 
-## How to Use
+## User Guide
 
 Export the path to the config file:
 
