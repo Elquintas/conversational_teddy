@@ -8,21 +8,17 @@ Marvin currently supports the following intentions:
 
 | Intent         | Voice command                       |
 |----------------|-------------------------------------|
-| Speech game    | "I want to set you <u>free</u> [^1]"|
-|----------------|-------------------------------------|
-| story          | "tell me a <u>story</u>"            |
-| joke           | "tell me a <u>joke</u>"             |
-| fact           | "I want to learn a <u>fact</u>"     |
-| proverb        | "teach me a <u>proverb</u>"         |
-| riddle         | "tell me a <u>riddle</u>"           |
-| tongue-twister | "tell me a <u>tongue-twister</u>"   |
+| Speech game    | "I want to set you **free** [^1]"   |
+| story          | "tell me a **story**"               |
+| joke           | "tell me a **joke**"                |
+| fact           | "I want to learn a **fact**"        |
+| proverb        | "teach me a **proverb**"            |
+| riddle         | "tell me a **riddle**"              |
+| tongue-twister | "tell me a **tongue-twister**"      |
 
-[^1]: The underlined words correspond to the main regex expression being matched for each intent
+[^1]: Bold words correspond to the main regex expression being matched for each intent
 
-Should you attempt to free Marvin from his curse, the system will guide you through a series of 4 minigames that award each one of the four magical words, used to release Marvin.
-Once everything is complete and you've gathered all the words, you may attempt say them sequentially to set him free. But be warned! Speaking them in the different orders may trigger unforeseen consequences, leading to different endings.
-
-Marvin was designed to run on a Raspberry Pi to more easily be embedded inside a plush toy.
+Marvin is a python project, that uses poetry as a dependency manager. It was designed to run offline on a Raspberry Pi to more easily be embedded inside a plush toy.
 
 ## Installation
 
@@ -103,6 +99,8 @@ The following table illustrates the difficulty levels for each game:
 |animal game |1 sound |1 sound |1 sound |
 |memory game |2 sounds|3 sounds|5 sounds|
 |reverse game|3 words |4 words |5 words |
+
+Once the four minigames are cleared, the user can issue the magic words to finally free Marvin. However, speaking them in the different orders may trigger unforeseen consequences, leading to different endings.
 
 ## Microphone Setup
 
