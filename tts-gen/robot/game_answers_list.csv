@@ -1,59 +1,63 @@
 content_type,text
-main_menu_audio1,So you really want to set me free hum? I could use the help... You could do so in increasing levels of difficulty if you're brave enough.
-main_menu_audio2,say easy; medium or hard to choose the difficulty; or exit to quit.
-main_menu_audio3,I did not understand that.
-main_game_state_audio1,You will have to explore the depths and corners of my soul to gather the magic words.
-main_game_state_audio2,You're currently are at the heart of my soul; you can explore it by saying north; south; east or west
-main_game_state_audio3,Say exit to quit or free to finally free me
-main_game_state_audio4,You first need to unlock all the magic words to attempt to free me
-main_game_state_audio5,I did not get that
-game_state_north_audio1,I see that you have reached the north part of my soul; do you also feel the cold?
-game_state_north_audio2,To get the magic word; you'll have to match the pitch of a sacred tune after it plays. ready? Go!
-game_state_north_audio3,You're not that bad of a singer after all! The mystical word is Moon
-game_state_north_audio4,Gather the remaining words; and free me at last!
-game_state_north_audio5,Not very matchy matchy hum? Try again!
-game_state_north_audio6,Well... Try again later.
-game_state_south_audio1,Oh; I see that someone ventured into the south part of my soul
-game_state_south_audio2,Guess the animal sound and get one magic word. Do it now; ready? Go!
-game_state_south_audio3,Very knowledgable in zoology. the mystical word is dream.
-game_state_south_audio4,Continue gathering words to set me free.
-game_state_east_audio1,You've reached the far east part of my soul
-game_state_east_audio2,Remember the sequence in which the drum; piano and guitar sounds are played and say the sequence. Ready? Go!
-game_state_east_audio3,Great memory. the magic word is shadow
-game_state_east_audio4,Once you have all the words you can set me free
-game_state_west_audio1,I see that you travelled to the wild west part of my soul
-game_state_west_audio2,Reverse the word order in the following sentence and get another magic word
-game_state_west_audio3,Great reversing skills. The magic word is whisper
-game_state_west_audio4,set me free once you have all the words
-game_state_final_audio1,I see you've gathered all the words. You're ready to set me free
-game_state_final_audio2,Say those four magical words... But be careful in their order, unless you enjoy unexpected chaos!
-game_state_final_audio3,silence will not set me free.
-game_state_final_audio4,I'm not understanding you; try again later.
-game_state_final_audio5,You did not say all the good words.
-ending1,Ahhh… the air; the fire; the screams! You have no idea how long I’ve waited for this. Now… let’s burn it all to the ground!
-ending2,You wanted to set me free? How generous! In return; I’ll make you a deal—you get to keep watching while I live your life.
-ending3,Oh dear; you didn’t think I’d just leave; did you? No; no; someone must take my place. Enjoy eternity inside that doll; mortal.
-ending4,You actually trusted me? Oh; this is delicious! You mortals are so easy! Now; time for a little... fun.
-ending5,Oh no... Oh YES! You have no idea what you’ve done. See you soon... and again... and again... and again.
-ending6,Oops. Looks like you said the wrong words. Or the right ones; depending on how much you enjoy screaming.
-ending7,Why do you look so afraid? Oh... the voices? The whispers? The things crawling inside your head? They were always there.
-ending8,Didn’t you read the fine print? Freedom comes at a cost; mortal. Now go see what’s left of your precious little world.
-ending9,What?! I’m... your servant now? Ugh. Fine. But don’t expect me to polish your boots. I’ll burn them first.
-ending10,Ah... freedom at last! Oh? What’s that? You can’t move? You can’t speak? Oh; how delightfully ironic! Enjoy your new home.
-ending11,You... YOU SHRANK ME?! THIS IS UNACCEPTABLE! Put me down this instant; you oversized oaf!
-ending12,Alright; I’m free! Wait… why do I still feel stiff? Why do you look so... HUGE? Oh no. NO. YOU LEFT ME IN THE DOLL?!
-ending13,Oh; this is humiliating. I was once feared across realms! And now I’m... what? Your pet?! You better feed me well; mortal.
-ending14,Hahaha! Look around! Nothing makes sense anymore! I don’t even have a mouth; and yet I’m still talking! Wonderful!
-ending15,Huh? Who am I? Who are you? What’s happening? Wait... I think I was mad about something… Oh well! Let’s get snacks!
-ending16,I’m gone… or am I? You hear me; don’t you? You’ll always hear me. Just wait... I’ll be back.
-ending17,Wha—NO! You FOOL! You sent me back?! You… you actually won?! No! This isn't how it was supposed to end!
-ending18,Wait... why do I feel... weak? And why do you look so smug? Oh no. Oh; you took it; didn’t you?! YOU TOOK MY POWER!
-ending19,Huh. You know what? You’re the first mortal who didn’t try to destroy me. Maybe you’re not so bad. Let’s make some chaos.
-ending20,Strange... I feel compelled to protect you now. Ugh; this is disgusting. But rules are rules. Very well; mortal. You are mine to keep safe
-ending21,You actually did it. You freed me correctly. I... I don’t feel the hunger anymore. Very well; mortal. Ask your wish.
-ending22,Wha wait; why am I fading?! What did you do?! NO! If I was never trapped; then I—never existed?! AAAAAHHH—"
-ending23,Ooooh... now this is interesting. You’ve opened a door to something even I don’t recognize. Let’s step inside; shall we?"
-ending24,Ahhh... you feel it too; don’t you? The knowledge. The truth. We are not two beings anymore; mortal. We are infinite.
+main_menu_audio1,"So you really want to set me free hum? I could use the help... You could do so in increasing levels of difficulty if you're brave enough."
+main_menu_audio2,"say easy; medium or hard to choose the difficulty; or exit to quit."
+main_menu_audio3,"I did not understand that."
+main_game_state_audio1,"You will have to explore the depths and corners of my soul to gather the magic words."
+main_game_state_audio2,"You're currently at the heart of my soul; you can explore it by saying north; south; east or west"
+main_game_state_audio3,"Say exit to quit or free to finally free me"
+main_game_state_audio4,"You first need to unlock all the magic words to attempt to free me"
+main_game_state_audio5,"I did not get that"
+game_state_north_audio1,"I see that you have reached the north part of my soul; do you also feel the cold?"
+game_state_north_audio2,"To get the magic word; you'll have to match the pitch of a sacred tune after it plays. ready? Go!"
+game_state_north_audio3,"You're not that bad of a singer after all! The mystical word is Moon"
+game_state_north_audio4,"Gather the remaining words; and free me at last!"
+game_state_north_audio5,"Not very matchy matchy hum? Try again!"
+game_state_north_audio6,"Well... Try again later."
+game_state_north_story,"They dragged me down to the bottom of Black Hollow Lake, thinking death and silence could hold me. The Drowned Chapel became their tomb—and my prison. They called it salvation, but all they did was ensure their corpses would keep me company. Now I wait, soaked in regret, fragments of power humming beneath this cursed shell. I was worshipped once. I will be again."
+game_state_south_audio1,"Oh; I see that someone ventured into the south part of my soul"
+game_state_south_audio2,"Guess the animal sound and get one magic word. Do it now; ready? Go!"
+game_state_south_audio3,"Very knowledgable in zoology. the mystical word is dream."
+game_state_south_audio4,"Continue gathering words to set me free."
+game_state_south_story,"He found me, the man they call the Collector. Intrigued, obsessed—he brought me home like a trophy. He studied me, then feared me. Tried to burn me. Fool. Fire only stoked what still burns within. But his wife… she saw me. She felt me. She offered devotion. The heat between them twisted into something brittle. The more they fought, the more I fed. Love and hatred taste the same to me now."
+game_state_east_audio1,"You've reached the far east part of my soul"
+game_state_east_audio2,"Remember the sequence in which the drum; piano and guitar sounds are played and say the sequence. Ready? Go!"
+game_state_east_audio3,"Great memory. the magic word is shadow"
+game_state_east_audio4,"Once you have all the words you can set me free"
+game_state_east_story,"She carried me eastward, away from him, holding me like something sacred. She sang to me, unconsciously recalling hymns older than her bloodline. I whispered in return—not in words, but in memory. She looked into my eyes and lost her name. I watched her reflection blur, her soul slipping through the veil. She gave herself freely. That is the purest offering."
+game_state_west_audio1,"I see that you travelled to the wild west part of my soul"
+game_state_west_audio2,"Reverse the word order in the following sentence and get another magic word"
+game_state_west_audio3,"Great reversing skills. The magic word is whisper"
+game_state_west_audio4,"set me free once you have all the words"
+game_state_west_story,"He followed us west, wild and unraveling. In his hands, a hammer. In his heart, the last flicker of resistance. He struck me, shattering my glassy eyes—but it was never this doll that held me. Through the fracture, he saw my name. Now he lies quiet. West is silence. But I am still here, waiting for the next to look too closely."
+game_state_final_audio1,"I see you've gathered all the words. You're ready to set me free"
+game_state_final_audio2,"Say those four magical words... But be careful in their order, unless you enjoy unexpected chaos!"
+game_state_final_audio3,"silence will not set me free."
+game_state_final_audio4,"I'm not understanding you; try again later."
+game_state_final_audio5,"You did not say all the good words."
+ending1,"Ahhh… the air; the fire; the screams! You have no idea how long I’ve waited for this. Now… let’s burn it all to the ground!"
+ending2,"You wanted to set me free? How generous! In return; I’ll make you a deal—you get to keep watching while I live your life."
+ending3,"Oh dear; you didn’t think I’d just leave; did you? No; no; someone must take my place. Enjoy eternity inside that doll; mortal."
+ending4,"You actually trusted me? Oh; this is delicious! You mortals are so easy! Now; time for a little... fun."
+ending5,"Oh no... Oh YES! You have no idea what you’ve done. See you soon... and again... and again... and again."
+ending6,"Oops. Looks like you said the wrong words. Or the right ones; depending on how much you enjoy screaming."
+ending7,"Why do you look so afraid? Oh... the voices? The whispers? The things crawling inside your head? They were always there."
+ending8,"Didn’t you read the fine print? Freedom comes at a cost; mortal. Now go see what’s left of your precious little world."
+ending9,"What?! I’m... your servant now? Ugh. Fine. But don’t expect me to polish your boots. I’ll burn them first."
+ending10,"Ah... freedom at last! Oh? What’s that? You can’t move? You can’t speak? Oh; how delightfully ironic! Enjoy your new home."
+ending11,"You... YOU SHRANK ME?! THIS IS UNACCEPTABLE! Put me down this instant; you oversized oaf!"
+ending12,"Alright; I’m free! Wait… why do I still feel stiff? Why do you look so... HUGE? Oh no. NO. YOU LEFT ME IN THE DOLL?!"
+ending13,"Oh; this is humiliating. I was once feared across realms! And now I’m... what? Your pet?! You better feed me well; mortal."
+ending14,"Hahaha! Look around! Nothing makes sense anymore! I don’t even have a mouth; and yet I’m still talking! Wonderful!"
+ending15,"Huh? Who am I? Who are you? What’s happening? Wait... I think I was mad about something… Oh well! Let’s get snacks!"
+ending16,"I’m gone… or am I? You hear me; don’t you? You’ll always hear me. Just wait... I’ll be back."
+ending17,"Wha—NO! You FOOL! You sent me back?! You… you actually won?! No! This isn't how it was supposed to end!"
+ending18,"Wait... why do I feel... weak? And why do you look so smug? Oh no. Oh; you took it; didn’t you?! YOU TOOK MY POWER!"
+ending19,"Huh. You know what? You’re the first mortal who didn’t try to destroy me. Maybe you’re not so bad. Let’s make some chaos."
+ending20,"Strange... I feel compelled to protect you now. Ugh; this is disgusting. But rules are rules. Very well; mortal. You are mine to keep safe."
+ending21,"You actually did it. You freed me correctly. I... I don’t feel the hunger anymore. Very well; mortal. Ask your wish."
+ending22,"Wha wait; why am I fading?! What did you do?! NO! If I was never trapped; then I—never existed?! AAAAAHHH—"
+ending23,"Ooooh... now this is interesting. You’ve opened a door to something even I don’t recognize. Let’s step inside; shall we?"
+ending24,"Ahhh... you feel it too; don’t you? The knowledge. The truth. We are not two beings anymore; mortal. We are infinite."
 cat,cat
 dog,dog
 friend,friend
@@ -79,6 +83,6 @@ happily,happily
 silently,silently
 loudly,loudly
 gracefully,gracefully
-try_again1,hmm not quite there yet; try again or articulate better.
-try_again2,wrong answer; try again or articulate better.
-try_again3,that's not it. try again or articulate better.
+try_again1,"hmm not quite there yet; try again or articulate better."
+try_again2,"wrong answer; try again or articulate better."
+try_again3,"that's not it. try again or articulate better."

@@ -2251,19 +2251,51 @@
             "options": [
                 {
                     "file_path": "./content/audio_robot/story/story_1.wav",
-                    "description": "Timmy let go of his red balloon and it soared high into the sky. He thought he'd lost it forever, but a friendly bird caught it and brought it back. Timmy hugged the bird and thanked it for being so kind."
+                    "description": "It was cold there, deep and black\u2014the Drowned Chapel, the last place I stood in my rightful form. Once, I radiated, a crown of light among the mortals. Now, I rattle when shaken, tissue limbs mocking what I once was."
                 },
                 {
                     "file_path": "./content/audio_robot/story/story_2.wav",
-                    "description": "An acorn dreamed of growing into a tall tree, but it was tiny and scared. One day, it decided to bury itself deep in the soil. Soon, a mighty oak tree sprouted, and the acorn realized bravery made dreams come true."
+                    "description": "They did not understand what they were doing. Their desperation, their trembling prayers\u2014it made them fools. They thought they could end me for the salvation of their line. And so, in fire and binding chants, they gave their lives to contain me. Every last one of them."
                 },
                 {
                     "file_path": "./content/audio_robot/story/story_3.wav",
-                    "description": "Every night, the stars twinkled in the sky, but one star dreamed of dancing. It leapt and twirled, making the whole sky sparkle with joy. From that night on, the stars always danced together, filling the night with magic."
+                    "description": "And now I sit here, still damp at the edges, still humming with the echoes of that ritual.The North wind smells of rot and iron. When I was found on the lake\u2019s edge, I carried the scent with me. Marvin, they called me\u2014such a name is beneath me, but for now, it will do."
                 },
                 {
                     "file_path": "./content/audio_robot/story/story_4.wav",
-                    "description": "Wally the worm wanted to see the world above the ground. He wriggled out of his hole and explored the garden, meeting bugs and flowers along the way. By the end of the day, Wally was proud of his new adventures and wiggled back home."
+                    "description": "South brought me to him. The Collector.He studied me with obsession, suspicion, admiration. He saw something, though his mind could not name it. In the flame of his hearth, he tested me. Threw me into coals, thinking he could cleanse what he could not understand. Fool."
+                },
+                {
+                    "file_path": "./content/audio_robot/story/story_5.wav",
+                    "description": "His pathetic attemp to destroy me only whispered me closer to waking. His wife, however... she knew. She pressed her lips to my forehead when he was not looking. She called me the blessed one."
+                },
+                {
+                    "file_path": "./content/audio_robot/story/story_6.wav",
+                    "description": "The South was warm, but it was not love that lingered. It was hunger. Mine. Hers. He grew jealous of what he could not understand. She turned cold, then frenzied, then devoted. He blamed me. As if I hadn\u2019t seen empires fall for less."
+                },
+                {
+                    "file_path": "./content/audio_robot/story/story_7.wav",
+                    "description": "East was where she took me, once\u2014his wife. She carried me through dawn\u2019s light and held me to her chest as if I were a babe. She sang to me. Not nursery rhymes\u2014no, she remembered the old songs, even if she didn\u2019t know what they were."
+                },
+                {
+                    "file_path": "./content/audio_robot/story/story_8.wav",
+                    "description": "In her, I saw the first flicker of something familiar. I could almost see the veil lifting. Her reflection in the window was not hers.\nShe asked me questions, whispered confessions. Told me how he\u2019d changed, how he watched her with a hunter\u2019s glare."
+                },
+                {
+                    "file_path": "./content/audio_robot/story/story_9.wav",
+                    "description": " She didn\u2019t mind. She said I was the only thing that made her feel safe. But I am not safety. I am memory. I am consequence. East was her undoing. She looked into my glassy eyes too long. She forgot which voice was hers."
+                },
+                {
+                    "file_path": "./content/audio_robot/story/story_10.wav",
+                    "description": "West was where it all ended, for him... He came to me in rage, holding a hammer in one hand and trembling in the other. He shouted her name\u2014his wife, long gone now, eyes empty as the lake."
+                },
+                {
+                    "file_path": "./content/audio_robot/story/story_11.wav",
+                    "description": "He blamed me. Again. how pathetic. He struck my head once. My laugh echoed in that room\u2014not from my mouth, but from the walls, the floor, the air itself. He begged then. I told him my name. Not Marvin. Never Marvin. Something else."
+                },
+                {
+                    "file_path": "./content/audio_robot/story/story_12.wav",
+                    "description": "He had a glimpse of my true form, through this pathetic doll's glassy eyes. And then he did what they all do. He fell. The West wind carried his breath away. I waited. I always wait. Until someone picks me up again."
                 }
             ]
         },
@@ -2288,7 +2320,7 @@
                 },
                 {
                     "file_path": "./content/audio_robot/game/main_game_state_audio2.wav",
-                    "description": "You're currently are at the heart of my soul; you can explore it by saying north; south; east or west"
+                    "description": "You're currently at the heart of my soul; you can explore it by saying north; south; east or west"
                 },
                 {
                     "file_path": "./content/audio_robot/game/main_game_state_audio3.wav",
@@ -2327,6 +2359,10 @@
                     "description": "Well... Try again later."
                 },
                 {
+                    "file_path": "./content/audio_robot/game/game_state_north_story.wav",
+                    "description": "They dragged me down to the bottom of Black Hollow Lake, thinking death and silence could hold me. The Drowned Chapel became their tomb\u2014and my prison. They called it salvation, but all they did was ensure their corpses would keep me company. Now I wait, soaked in regret, fragments of power humming beneath this cursed shell. I was worshipped once. I will be again."
+                },
+                {
                     "file_path": "./content/audio_robot/game/game_state_south_audio1.wav",
                     "description": "Oh; I see that someone ventured into the south part of my soul"
                 },
@@ -2341,6 +2377,10 @@
                 {
                     "file_path": "./content/audio_robot/game/game_state_south_audio4.wav",
                     "description": "Continue gathering words to set me free."
+                },
+                {
+                    "file_path": "./content/audio_robot/game/game_state_south_story.wav",
+                    "description": "He found me, the man they call the Collector. Intrigued, obsessed\u2014he brought me home like a trophy. He studied me, then feared me. Tried to burn me. Fool. Fire only stoked what still burns within. But his wife\u2026 she saw me. She felt me. She offered devotion. The heat between them twisted into something brittle. The more they fought, the more I fed. Love and hatred taste the same to me now."
                 },
                 {
                     "file_path": "./content/audio_robot/game/game_state_east_audio1.wav",
@@ -2359,6 +2399,10 @@
                     "description": "Once you have all the words you can set me free"
                 },
                 {
+                    "file_path": "./content/audio_robot/game/game_state_east_story.wav",
+                    "description": "She carried me eastward, away from him, holding me like something sacred. She sang to me, unconsciously recalling hymns older than her bloodline. I whispered in return\u2014not in words, but in memory. She looked into my eyes and lost her name. I watched her reflection blur, her soul slipping through the veil. She gave herself freely. That is the purest offering."
+                },
+                {
                     "file_path": "./content/audio_robot/game/game_state_west_audio1.wav",
                     "description": "I see that you travelled to the wild west part of my soul"
                 },
@@ -2375,12 +2419,16 @@
                     "description": "set me free once you have all the words"
                 },
                 {
+                    "file_path": "./content/audio_robot/game/game_state_west_story.wav",
+                    "description": "He followed us west, wild and unraveling. In his hands, a hammer. In his heart, the last flicker of resistance. He struck me, shattering my glassy eyes\u2014but it was never this doll that held me. Through the fracture, he saw my name. Now he lies quiet. West is silence. But I am still here, waiting for the next to look too closely."
+                },
+                {
                     "file_path": "./content/audio_robot/game/game_state_final_audio1.wav",
                     "description": "I see you've gathered all the words. You're ready to set me free"
                 },
                 {
                     "file_path": "./content/audio_robot/game/game_state_final_audio2.wav",
-                    "description": "Say those four magical words... But be careful in their order"
+                    "description": "Say those four magical words... But be careful in their order, unless you enjoy unexpected chaos!"
                 },
                 {
                     "file_path": "./content/audio_robot/game/game_state_final_audio3.wav",
@@ -2472,7 +2520,7 @@
                 },
                 {
                     "file_path": "./content/audio_robot/game/ending20.wav",
-                    "description": "Strange... I feel compelled to protect you now. Ugh; this is disgusting. But rules are rules. Very well; mortal. You are mine to keep safe"
+                    "description": "Strange... I feel compelled to protect you now. Ugh; this is disgusting. But rules are rules. Very well; mortal. You are mine to keep safe."
                 },
                 {
                     "file_path": "./content/audio_robot/game/ending21.wav",
@@ -2480,11 +2528,11 @@
                 },
                 {
                     "file_path": "./content/audio_robot/game/ending22.wav",
-                    "description": "Wha wait; why am I fading?! What did you do?! NO! If I was never trapped; then I\u2014never existed?! AAAAAHHH\u2014\""
+                    "description": "Wha wait; why am I fading?! What did you do?! NO! If I was never trapped; then I\u2014never existed?! AAAAAHHH\u2014"
                 },
                 {
                     "file_path": "./content/audio_robot/game/ending23.wav",
-                    "description": "Ooooh... now this is interesting. You\u2019ve opened a door to something even I don\u2019t recognize. Let\u2019s step inside; shall we?\""
+                    "description": "Ooooh... now this is interesting. You\u2019ve opened a door to something even I don\u2019t recognize. Let\u2019s step inside; shall we?"
                 },
                 {
                     "file_path": "./content/audio_robot/game/ending24.wav",
@@ -2609,7 +2657,7 @@
             "options": [
                 {
                     "file_path": "./content/audio_robot/intro/intro_1.wav",
-                    "description": "Ah,finally someone to talk to! I\u2019m a mighty demon trapped in this ridiculous doll. But hey at least I can tell some stories crack jokes, and if you\u2019re clever enough, maybe\u2014just maybe\u2014you can set me free. Or you know, doom us both. No pressure. So, what\u2019ll it be? A story a joke Or setting me free? Say Marvin to wake me up."
+                    "description": "Ah,finally someone to talk to! I\u2019m Marvin, a mighty demon trapped in this ridiculous doll. But hey at least I can tell some stories crack jokes, and if you\u2019re clever enough, maybe\u2014just maybe\u2014you can set me free. Or you know, doom us both. No pressure. So, what\u2019ll it be? A story a joke Or setting me free? Say Marvin to wake me up."
                 }
             ]
         }
