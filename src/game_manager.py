@@ -134,10 +134,10 @@ class SpeechGameInterface:
 
         if retry_ctr == 0:
             logger.info("So you really want to set me free hein?")
-            logger.info("I can be a generous god...")
+            logger.info("I could use the help...")
             self.play_game_audio("main_menu_audio1.wav")
 
-        logger.info("Write 'yes' to set me free or 'no' to exit")
+        logger.info("Choose the difficulty 'easy', 'medium' or 'hard' to exit")
         self.play_game_audio("main_menu_audio2.wav")
 
         command = self.record_and_transcribe(audio_dur=3)
@@ -165,8 +165,6 @@ class SpeechGameInterface:
             self.reverse_game = ReverseGame(self.asr_model, DIFFICULTY="hard")
             self.main_game_state(retry_ctr=0)
 
-        # if "yes" in command:
-        #    self.main_game_state(retry_ctr=0)
         elif "exit" in command or retry_ctr > self.max_retries:
             self.play = False
             return
@@ -243,7 +241,11 @@ class SpeechGameInterface:
         """
         logger.info("You've reached the north part of my soul")
         self.play_game_audio("game_state_north_audio1.wav")
+        # self.play_game_audio("game_state_north_story.wav")
         self.play_game_audio("game_state_north_audio2.wav")
+        time.sleep(0.5)
+        self.play_game_audio("game_state_north_ready.wav")
+        time.sleep(1)
 
         while retry_ctr < self.max_retries:
             time.sleep(1.5)
@@ -272,8 +274,12 @@ class SpeechGameInterface:
         """
         logger.info("You've reached the south part of my soul")
         self.play_game_audio("game_state_south_audio1.wav")
-
+        # self.play_game_audio("game_state_south_story.wav")
         self.play_game_audio("game_state_south_audio2.wav")
+        time.sleep(0.5)
+        self.play_game_audio("game_state_south_ready.wav")
+        time.sleep(1)
+
         game_success = self.animal_game.play()
 
         if game_success:
@@ -294,8 +300,12 @@ class SpeechGameInterface:
         """
         logger.info("You've reached the east part of my soul")
         self.play_game_audio("game_state_east_audio1.wav")
-
+        # self.play_game_audio("game_state_east_story.wav")
         self.play_game_audio("game_state_east_audio2.wav")
+        time.sleep(0.5)
+        self.play_game_audio("game_state_east_ready.wav")
+        time.sleep(1)
+
         game_success = self.memory_game.play()
 
         if game_success:
@@ -316,8 +326,11 @@ class SpeechGameInterface:
         """
         logger.info("You've reached the west part of my soul")
         self.play_game_audio("game_state_west_audio1.wav")
-
+        # self.play_game_audio("game_state_west_story.wav")
         self.play_game_audio("game_state_west_audio2.wav")
+        time.sleep(0.5)
+        self.play_game_audio("game_state_west_ready.wav")
+        time.sleep(1)
         game_success = self.reverse_game.play()
 
         if game_success:

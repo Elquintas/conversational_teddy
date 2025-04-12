@@ -2316,11 +2316,11 @@
                 },
                 {
                     "file_path": "./content/audio_robot/game/main_game_state_audio1.wav",
-                    "description": "You will have to explore the depths and corners of my soul to gather the magic words."
+                    "description": "You will have to explore the depths of my soul and memories to gather the four magic words that can only set me free."
                 },
                 {
                     "file_path": "./content/audio_robot/game/main_game_state_audio2.wav",
-                    "description": "You're currently at the heart of my soul; you can explore it by saying north; south; east or west"
+                    "description": "To explore my soul say north, south, east or west."
                 },
                 {
                     "file_path": "./content/audio_robot/game/main_game_state_audio3.wav",
@@ -2340,11 +2340,11 @@
                 },
                 {
                     "file_path": "./content/audio_robot/game/game_state_north_audio2.wav",
-                    "description": "To get the magic word; you'll have to match the pitch of a sacred tune after it plays. ready? Go!"
+                    "description": "To get the magic word; you'll have to match the pitch of a sacred tune after it plays."
                 },
                 {
                     "file_path": "./content/audio_robot/game/game_state_north_audio3.wav",
-                    "description": "You're not that bad of a singer after all! The mystical word is Moon"
+                    "description": "You're not that bad of a singer after all! The mystical word is Moon."
                 },
                 {
                     "file_path": "./content/audio_robot/game/game_state_north_audio4.wav",
@@ -2363,12 +2363,16 @@
                     "description": "They dragged me down to the bottom of Black Hollow Lake, thinking death and silence could hold me. The Drowned Chapel became their tomb\u2014and my prison. They called it salvation, but all they did was ensure their corpses would keep me company. Now I wait, soaked in regret, fragments of power humming beneath this cursed shell. I was worshipped once. I will be again."
                 },
                 {
+                    "file_path": "./content/audio_robot/game/game_state_north_ready.wav",
+                    "description": "Let's do it, ready? go!"
+                },
+                {
                     "file_path": "./content/audio_robot/game/game_state_south_audio1.wav",
                     "description": "Oh; I see that someone ventured into the south part of my soul"
                 },
                 {
                     "file_path": "./content/audio_robot/game/game_state_south_audio2.wav",
-                    "description": "Guess the animal sound and get one magic word. Do it now; ready? Go!"
+                    "description": "Guess the animal sound and get one magic word."
                 },
                 {
                     "file_path": "./content/audio_robot/game/game_state_south_audio3.wav",
@@ -2383,12 +2387,16 @@
                     "description": "He found me, the man they call the Collector. Intrigued, obsessed\u2014he brought me home like a trophy. He studied me, then feared me. Tried to burn me. Fool. Fire only stoked what still burns within. But his wife\u2026 she saw me. She felt me. She offered devotion. The heat between them twisted into something brittle. The more they fought, the more I fed. Love and hatred taste the same to me now."
                 },
                 {
+                    "file_path": "./content/audio_robot/game/game_state_south_ready.wav",
+                    "description": "Ready? Set, go!"
+                },
+                {
                     "file_path": "./content/audio_robot/game/game_state_east_audio1.wav",
                     "description": "You've reached the far east part of my soul"
                 },
                 {
                     "file_path": "./content/audio_robot/game/game_state_east_audio2.wav",
-                    "description": "Remember the sequence in which the drum; piano and guitar sounds are played and say the sequence. Ready? Go!"
+                    "description": "Remember the sequence in which the drum, piano and guitar sounds are played and say the sequence."
                 },
                 {
                     "file_path": "./content/audio_robot/game/game_state_east_audio3.wav",
@@ -2400,7 +2408,11 @@
                 },
                 {
                     "file_path": "./content/audio_robot/game/game_state_east_story.wav",
-                    "description": "She carried me eastward, away from him, holding me like something sacred. She sang to me, unconsciously recalling hymns older than her bloodline. I whispered in return\u2014not in words, but in memory. She looked into my eyes and lost her name. I watched her reflection blur, her soul slipping through the veil. She gave herself freely. That is the purest offering."
+                    "description": "I remember pieces of my past. She carried me eastward, away from him, holding me like something sacred. She sang to me, unconsciously recalling hymns older than her bloodline. I whispered in return\u2014not in words, but in memory. She looked into my eyes and lost her name. I watched her reflection blur, her soul slipping through the veil. She gave herself freely. That is the purest offering."
+                },
+                {
+                    "file_path": "./content/audio_robot/game/game_state_east_ready.wav",
+                    "description": "Ready or not, here it goes."
                 },
                 {
                     "file_path": "./content/audio_robot/game/game_state_west_audio1.wav",
@@ -2423,6 +2435,10 @@
                     "description": "He followed us west, wild and unraveling. In his hands, a hammer. In his heart, the last flicker of resistance. He struck me, shattering my glassy eyes\u2014but it was never this doll that held me. Through the fracture, he saw my name. Now he lies quiet. West is silence. But I am still here, waiting for the next to look too closely."
                 },
                 {
+                    "file_path": "./content/audio_robot/game/game_state_west_ready.wav",
+                    "description": "Ready? go!"
+                },
+                {
                     "file_path": "./content/audio_robot/game/game_state_final_audio1.wav",
                     "description": "I see you've gathered all the words. You're ready to set me free"
                 },
@@ -2440,7 +2456,7 @@
                 },
                 {
                     "file_path": "./content/audio_robot/game/game_state_final_audio5.wav",
-                    "description": "You did not say all the good words."
+                    "description": "You did not properly say all the good words. Try to articulate them better!"
                 },
                 {
                     "file_path": "./content/audio_robot/game/ending1.wav",
